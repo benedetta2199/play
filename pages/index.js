@@ -3,7 +3,6 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 import Piano from '../src/piano';
 import style from '../style/index.module.css';
 import { SkipBackwardFill, SkipForwardFill, ChevronDoubleDown, ChevronDoubleRight } from 'react-bootstrap-icons';
-import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -17,7 +16,7 @@ export default function Home() {
           <Col md={6} className="my-md-5">
             <h1 className={style.title + " text-uppercase text-center w-100 mt-4"}>
                 <SkipBackwardFill className={style.titleCommand}/>
-                <img src="/logo.png" className={style.logo} alt="Play"/>
+                <img src="./logo.png" className={style.logo} alt="Play"/>
                 <SkipForwardFill className={style.titleCommand}/>
           </h1>
             <h2 className={style.subtitle}>Ascolta le tue emozioni</h2>
