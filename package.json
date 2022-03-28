@@ -1,5 +1,5 @@
 {
-  "homepage": "http://benedetta2199.github.io/play",
+  "homepage": "https://benedetta2199.github.io/play",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
