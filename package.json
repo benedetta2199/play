@@ -1,5 +1,5 @@
 {
-  "homepage": "http://benedetta2199.github.io/nextjs-blog",
+  "homepage": "http://benedetta2199.github.io/play",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
