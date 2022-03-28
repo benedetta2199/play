@@ -1,0 +1,115 @@
+.conteiner{
+  height: 27em;
+  transform: scale(1.2);
+}
+
+.piano {
+  padding: 3px 0;
+  width:55em;
+  margin-top: 6rem !important;
+  border-radius:1em;
+  font-weight: 350;
+  background: #fff;  
+  position: absolute;
+  left: 19%; top: 4%;
+}
+.piano::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #fc1500, #ff2ded, #ff962d, #ffff0a, #3aff44, #0aeeff, #c50aff);
+  z-index: -1;
+  filter: blur(15px);
+}
+
+.white, .black {
+  margin:0;
+  padding:0;
+  list-style:none;
+  position:relative;
+  float:left
+}
+
+.white {
+  height:16em;
+  width:4em;
+  z-index:1;
+  border-left:1px solid #000;
+  border-bottom:1px solid #000;
+  border-radius:0 0 5px 5px;
+  box-shadow:-1px 0 0 rgba(255,255,255,.05) inset,0 0 5px #000 inset,0 0 3px rgba(0,0,0,0.6);
+  background:linear-gradient(to bottom,#333 0%,#555 100%)
+}
+.white:active {
+  border-top:1px solid #000;
+  border-left:1px solid #333;
+  border-bottom:1px solid #333;
+  box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.6) inset,0 0 3px rgba(0,0,0,0.6);
+  background:linear-gradient(to bottom,#444 0%,#333 100%)
+}
+
+.white>p{
+  font-size: 20px;
+  font-family: 'Julius Sans One';
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  margin-top: 10em;
+  text-align: right; 
+  color: #fff;
+	transform:rotate(-7deg);
+  -ms-transform:rotate(-90deg); /* IE 9 */
+  -moz-transform:rotate(-90deg); /* Firefox */
+  -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+  -o-transform:rotate(-90deg); /* Opera */
+  mix-blend-mode: lighten;
+}
+
+.black {
+  height:8em;
+  width:2em;
+  margin:0 0 0 -1em;
+  z-index:2;
+  border:1px solid #000;
+  border-radius:0 0 3px 3px;
+  box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
+  background:linear-gradient(45deg,#222 0%,#555 100%)
+}
+
+.black:active {
+  box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+  background:linear-gradient(to right,#444 0%,#222 100%)
+}
+
+.wb {margin:0 0 0 -1em}
+.start{margin-left: 20px;}
+
+.cDivertimento{text-shadow: 0 0 4px #fc1716;}
+.cGioia{text-shadow: 0 0 4px #fe26a9;}
+.cPassione{text-shadow: 0 0 4px #ff47bc;}
+.cBellezza{text-shadow: 0 0 4px #ff7667;}
+.cCalma{text-shadow: 0 0 4px #ff8a43;}
+.cTristezza{text-shadow: 0 0 4px #ffcf1a;}
+.cSogno{text-shadow: 0 0 4px #f6ff0b;}
+.cTrionfo{text-shadow: 0 0 4px #adfc21;}
+.cAnsia{text-shadow: 0 0 4px #44ff41;}
+.cPaura{text-shadow: 0 0 4px #29f887;}
+.cIrritazione{text-shadow: 0 0 4px #0ff0eb;}
+.cSfida{text-shadow: 0 0 4px#7768ff}
+.cEnergia{text-shadow: 0 0 4px #bb17ff;}
+
+@media only screen and (max-width: 600px) {
+  .conteiner{height: 46em; transform: scale(1)}
+  .piano{
+    transform: scale(0.8) rotate(90deg) !important;
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    -o-transform:rotate(90deg); /* Opera */
+    margin: 0 !important;
+    left: -70%;
+    top: 32%;
+  }
+}

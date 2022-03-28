@@ -1,13 +1,23 @@
 {
+  "homepage": "http://benedetta2199.github.io/nextjs-blog",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "latest",
+    "bootstrap": "^5.1.3",
+    "next": "^12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-bootstrap": "^2.2.1",
+    "react-bootstrap-icons": "^1.8.1",
+    "react-dom": "17.0.2",
+    "use-sound": "^4.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

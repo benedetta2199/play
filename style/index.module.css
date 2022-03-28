@@ -1,0 +1,27 @@
+.logo{width: 100px;}
+.title{margin-bottom: 17.5rem;}
+.subtitle{
+    position: absolute;
+    font-size: 6rem;
+    max-width: 750px;
+    left: 10%; top: 40%;
+}
+.description{font-size: 22px;}
+.titleCommand{font-size: 1.8rem; margin: 0 20px;}
+.imgHead{mix-blend-mode: lighten; position: absolute; right: 0; top:25px; width: 50%;}
+
+@media only screen and (max-width: 600px) {
+    .logo{width: 60px;}
+    .title{width: 50% !important; padding-left: 10px;  margin-bottom: 10px;}
+    .title *{font-size: 1rem;}
+    .subtitle{
+        font-size: 2.4rem;
+        position: relative;
+        left: 0; top: 0;
+        margin: 0 0 40px 10px;
+        max-width: 140px;
+    }
+    .description{font-size: 16px; text-align: center;}
+    .imgHead{ position: absolute; right: 0px; top: 85px; width: 60%;}
+    .img_girl{width: 90%;}
+  }
