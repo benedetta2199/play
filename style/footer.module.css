@@ -1,0 +1,26 @@
+.social li {list-style: none; float: left; padding: 5px; transform: scale(.8);}
+.social li a {display:block; position:relative; text-align: center; color:#777; border-radius:50%; width: 50px; height: 50px;  background: #333; transition:.5s;}
+.social svg {margin: 12px 0; font-size:24px; color: inherit;}
+.social path{color: inherit;}
+.social li a:before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    transition: .5s;
+    transform: scale(.9);
+    z-index:-1;
+}
+.ig:before{background: #ff5395}
+.sp:before{background: #09ce4e}
+
+.social li:first-child a:hover{border: rgba(255,255,255,.8) solid 1px; box-shadow: 0 0 20px #09ce4e, inset 0 0 5px #09ce4e;}
+.social li:last-child a:hover{border: rgba(255,255,255,.8) solid 1px; box-shadow: 0 0 20px #ff5395, inset 0 0 5px #ff5395;}
+
+.sp:hover {color: #27df68; box-shadow: 0 0 10px #09ce4e;}
+.ig:hover{color: #ff629e; box-shadow: 0 0 10px #ff5395;}
+.dropdown a{padding: 0; color: #fcf7f0;}
+.dropdown a:hover, .dropdown a:focus{color: #53ffe8;}
