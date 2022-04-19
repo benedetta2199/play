@@ -86,19 +86,19 @@
 .wb {margin:0 0 0 -1em}
 .start{margin-left: 20px;}
 
-.cDivertimento{text-shadow: 0 0 4px #fc1716;}
-.cGioia{text-shadow: 0 0 4px #fe26a9;}
-.cPassione{text-shadow: 0 0 4px #ff47bc;}
-.cBellezza{text-shadow: 0 0 4px #ff7667;}
-.cCalma{text-shadow: 0 0 4px #ff8a43;}
-.cTristezza{text-shadow: 0 0 4px #ffcf1a;}
-.cSogno{text-shadow: 0 0 4px #f6ff0b;}
-.cTrionfo{text-shadow: 0 0 4px #adfc21;}
-.cAnsia{text-shadow: 0 0 4px #44ff41;}
-.cPaura{text-shadow: 0 0 4px #29f887;}
-.cIrritazione{text-shadow: 0 0 4px #0ff0eb;}
-.cSfida{text-shadow: 0 0 4px#7768ff}
-.cEnergia{text-shadow: 0 0 4px #bb17ff;}
+.cAnsia{text-shadow: 0 0 4px #fc1716;}
+.cBellezza{text-shadow: 0 0 4px #FE266D;}
+.cCalma{text-shadow: 0 0 4px #ff47bc;}
+.cDivertimento{text-shadow: 0 0 4px #ff7667;}
+.cEnergia{text-shadow: 0 0 4px #ff8a43;}
+.cFastidio{text-shadow: 0 0 4px #ffcf1a;}
+.cGioia{text-shadow: 0 0 4px #FAFF07;}
+.cPassione{text-shadow: 0 0 4px #adfc21;}
+.cPaura{text-shadow: 0 0 4px #44ff41;}
+.cSfida{text-shadow: 0 0 4px #29f887;}
+.cSogno{text-shadow: 0 0 4px #0ff0eb;}
+.cTrionfo{text-shadow: 0 0 4px #7768ff}
+.cTristezza{text-shadow: 0 0 4px #bb17ff;}
 
 @media only screen and (max-width: 600px) {
   .conteiner{height: 46em; transform: scale(1)}
