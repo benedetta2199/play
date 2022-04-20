@@ -6,11 +6,11 @@
 
 @media only screen and (max-width: 600px) {
  .sectionOne{text-align: end !important;}
- .player{margin: 137px 8px 12px auto !important; z-index: 100; width: 330px !important; transform: scale(0.95);}
+ .player{margin: 137px 4px 12px 10px !important; z-index: 100; width: 330px !important; transform: scale(0.95); text-align: left;}
  .divHead{height: 210px !important; width: 100% !important;}
  .imgHead{top:5px !important; height: 210px !important; width: auto !important;}
  .title{ font-size: 3.4rem; margin-top: 5px; width: 100%; text-align: left;}
- .plSpotify{width: 330px;}
+ .plSpotify{width: 330px !important;}
 }
 
 .player{
