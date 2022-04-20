@@ -34,14 +34,14 @@ export default function Home() {
             </div>
             <div className={style.player + ' d-flex'}>
                 <Row className='w-100'>
-                    <Col sm={5}>
+                    <Col xs={5}>
                         <div className={style.shadow}>
                         <motion.div className={style.disc} variants={Variants} animate={isStart? "start" : "stop"}>
                             <img src={playlistImg[cont]}/>
                         </motion.div>
                         </div>
                     </Col>
-                    <Col sm={7}>
+                    <Col xs={7}>
                         <h2 className="h4 mt-2 mx-1">{playlistTitle[cont]}</h2>
                         <p className="mx-4">{playlistArtist[cont]}</p>
                         <div className={style.btnPlayer + ' d-flex w-100 justify-content-center'}>
