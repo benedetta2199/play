@@ -4,7 +4,7 @@
 .title{ font-size: 6rem; margin-top: 160px;}
 
 @media only screen and (max-width: 600px) {
- .player{margin: 140px 0 20px 18px !important; z-index: 100;}
+ .player{margin: 137px 0 20px 18px !important; z-index: 100; transform: scale(0.95);}
  .divHead{height: 210px !important; width: 100% !important;}
  .imgHead{top:5px !important; height: 210px !important; width: auto !important;}
  .title{ font-size: 3.5rem; margin-top: 5px;}
