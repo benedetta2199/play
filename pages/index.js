@@ -31,7 +31,7 @@ export default function Home() {
           </Col>
           <Col md={6}>
             <div className={style.imgHead + " imgCredit"}>
-              <img className={style.img_girl + " w-100"} src="./ansia.jpg" alt=""/>
+              <img className={style.img_girl + " w-100"} src="./tristezza.jpg" alt=""/>
               <a href="https://www.freepik.com/photos/african-dance" className="credit">created by master1305 - www.freepik.com</a>
             </div>
           </Col>
