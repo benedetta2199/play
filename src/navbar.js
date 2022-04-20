@@ -5,7 +5,7 @@ import style from '../style/footer.module.css';
 function NavBar() {
     return( 
         <Navbar variant="dark" className="px-md-5 px-1 py-1">
-            <a href="/">
+            <a href="/" className='d-sm-none d-md-inline'>
                 <img src="./logo.png" className="d-inline-block align-top" alt="React Bootstrap logo"/>
             </a>
                 <Nav className="ms-auto bd-highlight">
