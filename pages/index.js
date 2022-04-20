@@ -13,7 +13,7 @@ export default function Home() {
 
       <main>
         <Row className="my-md-5 pt-3">
-          <Col md={6} className="my-md-5">
+          <Col md={6} xs={7} className="my-md-5">
             <h1 className={style.title + " text-uppercase text-center w-100 mt-md-4 mt-2"}>
                 <SkipBackwardFill className={style.titleCommand}/>
                 <img src="./logo.png" className={style.logo} alt="Play"/>
@@ -29,7 +29,7 @@ export default function Home() {
               </Button>
             </p>
           </Col>
-          <Col md={6}>
+          <Col md={6} xs={5}>
             <div className={style.imgHead + " imgCredit"}>
               <img className={style.img_girl + " w-100"} src="./girl-headphone.jpg" alt=""/>
               <a href="https://www.freepik.com/photos/african-dance" className="credit">created by master1305 - www.freepik.com</a>
