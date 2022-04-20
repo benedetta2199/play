@@ -31,7 +31,7 @@ export default function Home() {
         <img src="./emotion/fastidio.jpg" className={style.imgHead} alt=""/>
         <a href="https://www.freepik.com/free-photo/singing-like-celebrity-rockstar-caucasian-boy-s-portrait-dark-studio-background-neon-light-beautiful-curly-model-concept-human-emotions-facial-expression-sales-ad-music-hobby-dream_14222713.htm" className="credit">created by master1305 - www.freepik.com</a>
       </div>
-      <section>
+      <section className={style.sectionOne}>
         <h1 className={style.title}>Fastidio</h1>
         <div className={style.player + ' d-flex'}>
             <Row className='w-100'>

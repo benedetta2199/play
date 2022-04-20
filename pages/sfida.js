@@ -31,7 +31,7 @@ export default function Home() {
         <img src="./emotion/sfida.jpg" className={style.imgHead} alt=""/>
         <a href="https://www.freepik.com/free-photo/human-emotions-facial-expression-sales-ad-concept-freak-s-culture-devices_20269238.htm" className="credit">created by master1305 - www.freepik.com</a>
       </div>
-      <section>
+      <section className={style.sectionOne}>
         <h1 className={style.title}>Sfida</h1>
         <div className={style.player + ' d-flex'}>
             <Row className='w-100'>

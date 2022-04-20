@@ -31,7 +31,7 @@ export default function Home() {
         <img src="./emotion/energia.jpg" className={style.imgHead} alt=""/>
         <a href="https://www.freepik.com/free-photo/young-girl-jumping-pink-wall_12648038.htm" className="credit">created by master1305 - www.freepik.com</a>
       </div>
-      <section>
+      <section className={style.sectionOne}>
         <h1 className={style.title}>Energia</h1>
         <div className={style.player + ' d-flex'}>
             <Row className='w-100'>

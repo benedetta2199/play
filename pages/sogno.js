@@ -31,7 +31,7 @@ export default function Home() {
         <img src="./emotion/sogno.jpg" className={style.imgHead} alt=""/>
         <a href="https://www.freepik.com/free-photo/caucasian-woman-s-portrait-isolated-blue-background-multicolored-neon-light_13636129.htm" className="credit">created by master1305 - www.freepik.com</a>
       </div>
-      <section>
+      <section className={style.sectionOne}>
         <h1 className={style.title}>Sogno</h1>
         <div className={style.player + ' d-flex'}>
             <Row className='w-100'>

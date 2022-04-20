@@ -31,7 +31,7 @@ export default function Home() {
         <img src="./emotion/calma.jpg" className={style.imgHead} alt=""/>
         <a href="https://www.freepik.com/free-photo/inspiration-asian-young-woman-s-portrait-dark-wall-neon-light-beautiful-female-model-with-headphones-concept-human-emotions-facial-expression-youth-sales-ad_15803823.htm" className="credit">created by master1305 - www.freepik.com</a>
       </div>
-      <section>
+      <section className={style.sectionOne}>
         <h1 className={style.title}>Calma</h1>
         <div className={style.player + ' d-flex'}>
             <Row className='w-100'>
@@ -69,8 +69,8 @@ export default function Home() {
                     <h2 className='display-2 px-4'>Ascolta le tue emozioni anche su Spotify</h2>
                 </Col>
                 <Col md={6} className="text-center">
-                  <iframe className={style.plSpotify}  src="https://open.spotify.com/embed/playlist/1SFp8Q4Vltls4fsncw0XEh?utm_source=generator" 
-                  width="350" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                  <iframe className={style.plSpotify}  src="https://open.spotify.com/embed/playlist/1SFp8Q4Vltls4fsncw0XEh?utm_source=generator" id="playlistSpot"
+                  height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         
                 </Col>
             </Row>

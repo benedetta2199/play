@@ -31,7 +31,7 @@ export default function Home() {
         <img src="./emotion/tristezza.jpg" className={style.imgHead} alt=""/>
         <a href="https://www.freepik.com/free-photo/african-young-man-portrait-with-headphones-dark-wall-with-copy-space_15560155.htm" className="credit">created by master1305 - www.freepik.com</a>
       </div>
-      <section>
+      <section className={style.sectionOne}>
         <h1 className={style.title}>Tristezza</h1>
         <div className={style.player + ' d-flex'}>
             <Row className='w-100'>

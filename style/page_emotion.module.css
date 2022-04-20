@@ -1,16 +1,19 @@
+.sectionOne{text-align: end;}
 .divHead{position: absolute !important; right: 0; top:60px; height: 780px; width: 65%;}
 .imgHead{position: absolute; right: 0; top:0px; mix-blend-mode: lighten; height: 770px; pointer-events: none;}
 
 .title{ font-size: 6rem; margin-top: 160px;}
 
 @media only screen and (max-width: 600px) {
- .player{margin: 137px 0 20px 18px !important; z-index: 100; transform: scale(0.95);}
+ .sectionOne{text-align: end !important;}
+ .player{margin: 137px 8px 12px auto !important; z-index: 100; width: 330px !important; transform: scale(0.95);}
  .divHead{height: 210px !important; width: 100% !important;}
  .imgHead{top:5px !important; height: 210px !important; width: auto !important;}
- .title{ font-size: 3.5rem; margin-top: 5px;}
+ .title{ font-size: 3.4rem; margin-top: 5px; width: 100%; text-align: left;}
+ #playlistSpot{width: 330px;}
 }
 
-
+#playlistSpot{width: 350px;}
 .player{
     margin: 37px 4rem;
     width: 350px; height: 170px;

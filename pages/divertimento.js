@@ -31,7 +31,7 @@ export default function Home() {
         <img src="./emotion/divertimento.jpg" className={style.imgHead} alt=""/>
         <a href="https://www.freepik.com/free-photo/calm-happy-caucasian-man-s-portrait-gradient-studio-background-neon-light-beautiful-male-model-with-hipster-style-earphones-concept-human-emotions-facial-expression-sales-ad_13342806.htm" className="credit">created by master1305 - www.freepik.com</a>
       </div>
-      <section>
+      <section className={style.sectionOne}>
         <h1 className={style.title}>Divertimento</h1>
         <div className={style.player + ' d-flex'}>
             <Row className='w-100'>

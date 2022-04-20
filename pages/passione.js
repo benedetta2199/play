@@ -26,7 +26,7 @@ export default function Home() {
     </Head>
 
     <main>
-        <section>
+        <section className={style.sectionOne}>
             <h1 className={style.title}>Passione</h1>
             <div className={style.divHead + " imgCredit"}>
                 <img src="./emotion/passione.jpg" className={style.imgHead} alt=""/>

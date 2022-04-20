@@ -31,7 +31,7 @@ export default function Home() {
         <img src="./emotion/gioia.jpg" className={style.imgHead} alt=""/>
         <a href="https://www.freepik.com/free-photo/happy-young-woman-listening-music-smiling-trendy-blue-neon-studio_12046069.htm" className="credit">created by master1305 - www.freepik.com</a>
       </div>
-      <section>
+      <section className={style.sectionOne}>
         <h1 className={style.title}>Gioia</h1>
         <div className={style.player + ' d-flex'}>
             <Row className='w-100'>
