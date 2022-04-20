@@ -69,7 +69,7 @@ export default function Home() {
                     <h2 className='display-2 px-4'>Ascolta le tue emozioni anche su Spotify</h2>
                 </Col>
                 <Col md={6} className="text-center">
-                  <iframe className={style.plSpotify}  src="https://open.spotify.com/embed/playlist/1SFp8Q4Vltls4fsncw0XEh?utm_source=generator" id="playlistSpot"
+                  <iframe className={style.plSpotify}  src="https://open.spotify.com/embed/playlist/1SFp8Q4Vltls4fsncw0XEh?utm_source=generator"
                   height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         
                 </Col>

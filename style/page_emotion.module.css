@@ -10,10 +10,9 @@
  .divHead{height: 210px !important; width: 100% !important;}
  .imgHead{top:5px !important; height: 210px !important; width: auto !important;}
  .title{ font-size: 3.4rem; margin-top: 5px; width: 100%; text-align: left;}
- #playlistSpot{width: 330px;}
+ .plSpotify{width: 330px;}
 }
 
-#playlistSpot{width: 350px;}
 .player{
     margin: 37px 4rem;
     width: 350px; height: 170px;
@@ -85,7 +84,7 @@
   .btnPlayer *{font-size: 26px; margin: 0 6px;}
   .btnPlayer button{background: transparent; border: 0;}
 
-  .plSpotify{position: relative; z-index: 2; border-radius:12px; margin-bottom: 7px; opacity: .9;}
+  .plSpotify{position: relative; z-index: 2; border-radius:12px; margin-bottom: 7px; opacity: .9; width: 350px;}
 
   .Spotify{margin: 17% 0 10%; padding-top: 3%;}
   .Spotify p {font-size: 22px;}
