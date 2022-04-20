@@ -22,8 +22,8 @@ function Footer() {
                 </Col>
                 <Col md={8} className='d-flex justify-content-end'>
                     <Row className='w-75 text-end'>
-                        <Col md={5}>Home</Col>
-                        <Col md={4}>
+                        <Col xs={5}>Home</Col>
+                        <Col xs={4}>
                             <NavDropdown title="Emozioni" menuVariant="dark" className={style.dropdown}>
                                 <NavDropdown.Item href="./emozioni" className='px-2 text-end'>Emozioni</NavDropdown.Item>
                                 <NavDropdown.Divider />
@@ -42,7 +42,7 @@ function Footer() {
                                 <NavDropdown.Item href="./tristezza" className='px-1'>Tristezza</NavDropdown.Item>
                             </NavDropdown>
                         </Col>
-                        <Col md={3}>L'Idea</Col>
+                        <Col xs={3}>L'Idea</Col>
                     </Row>
                 </Col>
             </Row>
