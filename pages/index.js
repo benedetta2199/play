@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <Row className="my-md-5 pt-3">
           <Col md={6} className="my-md-5">
-            <h1 className={style.title + " text-uppercase text-center w-100 mt-4"}>
+            <h1 className={style.title + " text-uppercase text-center w-100 mt-md-4 mt-2"}>
                 <SkipBackwardFill className={style.titleCommand}/>
                 <img src="./logo.png" className={style.logo} alt="Play"/>
                 <SkipForwardFill className={style.titleCommand}/>
