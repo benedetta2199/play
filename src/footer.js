@@ -47,7 +47,7 @@ function Footer() {
                 </Col>
             </Row>
             </Container>            
-            <div className="text-center text-sm p-2"><small>© 2022 Copyright:</small></div>
+            <div className="text-center text-sm p-2"><small>© 2022 Copyright <a href='./documentazione'>Documentazione</a></small></div>
         </footer>
     )
 }
