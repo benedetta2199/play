@@ -60,6 +60,63 @@ nav a{text-decoration: none; color: #fff; margin: auto 20px;}
 footer{background-image: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.79356216259217) 25%, rgba(0,0,0,0.89) 100%); position: relative; z-index: 2;}
 footer img{width: 35px; height: 35px;}
 
+/*COLORI BOTTONI EMOZIOI*/
+.btn_an{box-shadow: 0 0 15px #fc1716, inset 0 0 10px #fc1716 !important;}
+.btn_an:hover{box-shadow: 0 0 15px #29f887, inset 0 0 10px #29f887 !important;}
+.btn_be{box-shadow: 0 0 15px #FE266D, inset 0 0 10px #FE266D !important;} 
+.btn_be:hover{box-shadow: 0 0 15px #29f887, inset 0 0 10px #29f887 !important;}
+.btn_ca{box-shadow: 0 0 15px #ff47bc, inset 0 0 10px #ff47bc !important;} 
+.btn_ca:hover{box-shadow: 0 0 15px #44ff41, inset 0 0 10px #44ff41 !important;}
+.btn_dv{box-shadow: 0 0 15px #ff7667, inset 0 0 10px #ff7667 !important;} 
+.btn_dv:hover{box-shadow: 0 0 15px #0fcaf0, inset 0 0 10px #0fcaf0 !important;}
+.btn_en{box-shadow: 0 0 15px #ff8a43, inset 0 0 10px #ff8a43 !important;}
+.btn_en:hover{box-shadow: 0 0 15px #0fb4f0, inset 0 0 10px #0fb4f0 !important;}
+.btn_gi{box-shadow: 0 0 15px #FAFF07, inset 0 0 10px #FAFF07 !important;} 
+.btn_gi:hover{box-shadow: 0 0 15px #0f56f0, inset 0 0 10px #0f56f0 !important;}
+.btn_pass {box-shadow: 0 0 15px #adfc21, inset 0 0 10px #adfc21 !important;} 
+.btn_pass:hover {box-shadow: 0 0 15px #ff47bc, inset 0 0 10px #ff47bc !important;}
+.btn_pr {box-shadow: 0 0 15px #44ff41, inset 0 0 10px #44ff41 !important;} 
+.btn_pr:hover {box-shadow: 0 0 15px #ff47fc, inset 0 0 10px #ff47fc !important;}
+.btn_sf {box-shadow: 0 0 15px #29f887, inset 0 0 10px #29f887 !important;} 
+.btn_sf:hover {box-shadow: 0 0 15px #ff8a43, inset 0 0 10px #ff8a43 !important;}
+.btn_sg {box-shadow: 0 0 15px #0ff0eb, inset 0 0 10px #0ff0eb !important;} 
+.btn_sg:hover {box-shadow: 0 0 15px #ffb743, inset 0 0 10px #ffb743 !important;}
+  
+.btn_tr {box-shadow: 0 0 15px #bb17ff, inset 0 0 10px #bb17ff !important;} 
+.btn_tr:hover {box-shadow: 0 0 15px #f6ff0b, inset 0 0 10px #f6ff0b !important;}
+.btn_fs {box-shadow: 0 0 15px #ffcf1a, inset 0 0 10px #ffcf1a !important;} 
+.btn_fs:hover {box-shadow: 0 0 15px #0ff0eb, inset 0 0 10px #0ff0eb !important;}
+.btn_tri {box-shadow: 0 0 15px #6554ff, inset 0 0 10px #6554ff !important;} 
+.btn_tri:hover {box-shadow: 0 0 15px #c0ff41, inset 0 0 10px #c0ff41 !important;}
+
+/*COLORI TESTI EMOZIONI*/
+.cAnsia{text-shadow: 1px 1px 2px #29f887;} .cAnsia:hover{color: #fc1716;}
+.cBellezza{text-shadow: 0 0 4px #29f887;} .cBellezza:hover{color: #FE266D;}
+.cCalma{text-shadow: 0 0 4px #44ff41;} .cCalma:hover{color: #ff47bc;}
+.cDivertimento{text-shadow: 0 0 4px #0fcaf0;} .cDivertimento:hover{color: #ff7667;}
+.cEnergia{text-shadow: 0 0 4px #0fb4f0;} .cEnergia:hover{color: #ff8a43;}
+.cFastidio{text-shadow: 0 0 4px #0ff0eb;} .cFastidio:hover{color: #ffcf1a;}
+.cGioia{text-shadow: 0 0 4px #0f56f0;} .cGioia:hover{color: #FAFF07;}
+.cPassione{text-shadow: 0 0 4px #44ff41;} .cPassione:hover{color: #adfc21;}
+.cPaura{text-shadow: 0 0 4px #ff47fc;} .cPaura:hover{color: #44ff41;}
+.cSfida{text-shadow: 0 0 4px #ff8a43;} .cSfida:hover{color: #29f887;}
+.cSogno{text-shadow: 0 0 4px #ffb743;} .cSogno:hover{color: #0ff0eb;}
+.cTrionfo{text-shadow: 0 0 4px #c0ff41} .cTrionfo:hover{color: #6554ff}
+.cTristezza{text-shadow: 0 0 4px #f6ff0b;} .cTristezza:hover{color: #bb17ff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
   nav a{margin: auto 5px auto 25px;}
   footer img{width: 30px; height: 30px;}
