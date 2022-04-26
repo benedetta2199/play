@@ -29,6 +29,7 @@ function MyApp({ Component, pageProps }) {
       </Helmet>
       <Head>
         <link rel="icon" href="/logo.png" />
+        <title>Play</title>
       </Head>
       <NavBar page={router.pathname}/>
       <main>
