@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, NavDropdown, Row } from 'react-bootstrap';
+import { Col, Container, Nav, NavDropdown, Row } from 'react-bootstrap';
 import style from '../style/footer.module.css';
 import {Instagram, Spotify} from 'react-bootstrap-icons';
 
@@ -21,8 +21,8 @@ function Footer() {
                     </div>
                 </Col>
                 <Col md={8} className='d-flex justify-content-end'>
-                    <Row className='w-75 text-end'>
-                        <Col xs={5}>Home</Col>
+                    <Row className='w-75 text-end text-light'>
+                        <Col xs={5}><Nav.Link href='/' className='text-light text-decoration-none'>Home</Nav.Link></Col>
                         <Col xs={4}>
                             <NavDropdown title="Emozioni" menuVariant="dark" className={style.dropdown}>
                                 <NavDropdown.Item href="/emozioni" className='px-2 text-end'>Emozioni</NavDropdown.Item>
@@ -42,12 +42,14 @@ function Footer() {
                                 <NavDropdown.Item href="/tristezza" className='px-1'>Tristezza</NavDropdown.Item>
                             </NavDropdown>
                         </Col>
-                        <Col xs={3}>L'Idea</Col>
+                        <Col xs={3}><Nav.Link href='/idea' className='text-light text-decoration-none'>L'Idea</Nav.Link></Col>
                     </Row>
                 </Col>
             </Row>
             </Container>            
-            <div className="text-center text-sm p-2"><small>© 2022 Copyright <a href='./documentazione'>Documentazione</a></small></div>
+            <div className="text-center text-sm p-2"><small>© 2022 Copyright - 
+                <a href='./documentazione' className='text-light text-decoration-none'> Documentazione</a></small>
+            </div>
         </footer>
     )
 }

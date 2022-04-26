@@ -14,8 +14,8 @@ function NavBar(props) {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto bd-highlight">
                     <Nav.Link href="/" className={(page==='/'? 'active':'')}>Home</Nav.Link>
-                    <Nav.Link href="#" className=" d-none d-md-block">
-                        <NavDropdown title="Emozioni" menuVariant="dark" className={style.dropdown + (menuact? ' active':'')}>
+
+                    <NavDropdown title="Emozioni" menuVariant="dark" className={style.dropdown + (menuact? ' active':'' + " d-none d-md-block my-3")}>
                         <NavDropdown.Item href="/emozioni" className={(page=='/emozioni'? 'active ':'') + 'm-0 px-2 text-end'}>Emozioni</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="/ansia" className={(page=='/ansia'? 'active ':'') + 'm-0 px-1'}>Ansia</NavDropdown.Item>
@@ -32,7 +32,6 @@ function NavBar(props) {
                                 <NavDropdown.Item href="/trionfo" className={(page=='/trionfo'? 'active ':'') + 'm-0 px-1'}>Trionfo</NavDropdown.Item>
                                 <NavDropdown.Item href="/tristezza" className={(page=='/tristezza'? 'active ':'') + 'm-0 px-1'}>Tristezza</NavDropdown.Item>
                         </NavDropdown>
-                    </Nav.Link>
                     
                     <Nav.Link href="/emozioni" className={(page=='/emozioni'? 'active ':'') + 'd-md-none mb-0 pb-0'}>Emozioni</Nav.Link>
                     <Nav.Link href="/ansia" className={(page=='/ansia'? 'active ':'') + 'd-md-none py-0 my-0 px-3'}>Ansia</Nav.Link>

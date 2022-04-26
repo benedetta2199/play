@@ -22,19 +22,19 @@ function Piano() {
                 <li className={classnames(style.white, style.wb)}><p className={style.cDivertimento}>divertimento</p></li>
                 <li className={style.white}><p className={style.cEnergia}>energia</p></li>
                     <li className={style.black} onClick={g}></li>
-                <Link href="./fastidio"><li className={classnames(style.white, style.wb)}><p className={style.cFastidio}>fastidio</p></li></Link>
+                <Link href="/fastidio"><li className={classnames(style.white, style.wb)}><p className={style.cFastidio}>fastidio</p></li></Link>
                     <li className={style.black} onClick={a}></li>
                 <li className={classnames(style.white, style.wb)}><p className={style.cGioia}>gioia</p></li>
-                <Link href="./passione"><li className={style.white}><p className={style.cPassione}>passione</p></li></Link>
+                <Link href="/passione"><li className={style.white}><p className={style.cPassione}>passione</p></li></Link>
                     <li className={style.black} onClick={c}></li>
                 <li className={classnames(style.white, style.wb)}><p className={style.cPaura}>paura</p></li>
                     <li className={style.black} onClick={d}></li>
-                <Link href="./sfida"><li className={classnames(style.white, style.wb)}><p className={style.cSfida}>sfida</p></li></Link>
+                <Link href="/sfida"><li className={classnames(style.white, style.wb)}><p className={style.cSfida}>sfida</p></li></Link>
                     <li className={style.black} onClick={f}></li>
                 <li className={classnames(style.white, style.wb)}><p className={style.cSogno}>sogno</p></li>
                 <li className={style.white}><p className={style.cTrionfo}>trionfo</p></li>
                     <li className={style.black} onClick={g}></li>
-                <Link href="./tristezza"><li className={classnames(style.white, style.wb) + " rounded-top"}><p className={style.cTristezza}>tristezza</p></li></Link>
+                <Link href="/tristezza"><li className={classnames(style.white, style.wb) + " rounded-top"}><p className={style.cTristezza}>tristezza</p></li></Link>
             </ul>
         </div>
     )
