@@ -91,7 +91,7 @@ export default function Emotion(props) {
                 </Col>
                 <Col md={6} className="text-center">
                   <iframe className={style.plSpotify}  src={"https://open.spotify.com/embed/playlist/"+idSpotify+"?utm_source=generator" }
-                  width="350" height="380" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                  width="350" height="380" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         
                 </Col>
             </Row>
