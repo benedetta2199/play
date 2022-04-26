@@ -46,7 +46,7 @@ export default function Emotion(props) {
               <Col xs={5}>
                 <div className={style.shadow}>
                   <motion.div className={style.disc} variants={Variants} animate={isStart? "start" : "stop"}>
-                    <img src={imgs[cont]}/>
+                    <img src={imgs[cont]} alt=""/>
                   </motion.div>
                 </div>
               </Col>
