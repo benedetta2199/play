@@ -5,23 +5,27 @@ import { ChevronDoubleDown, PlayFill, SkipBackwardFill, SkipForwardFill } from '
 import { useState } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import CardEmotion from './card';
+import useSound from 'use-sound';
 
 export default function Emotion(props) {
 
   const {title, linkImg, player, st, color, card, cit, Acit, idSpotify} = props;
 
-    const playlistTitle = ["Into The Red",".Overdrive"]
-    const playlistArtist = ["Trinity","Matrika"]
-    const playlistMusic = ["./music/sfida/1.mp3","./music/sfida/2.mp3"]
-    const playlistImg = ["./music/sfida/1.jpg","./music/sfida/2.jpg"]
+  const titles=['Into The Red', 'Overdrive'];
+  const artists=['Trinity', 'Matrika'];
+  const tracks=[useSound('./music/sfida/1.mp3'),useSound('./music/sfida/2.mp3')];
+  const imgs=["./music/sfida/1.jpg","./music/sfida/2.jpg"];
     const Variants = {
         stop: {rotate: 0},
         start: {rotate: 360,transition: { duration: 8, repeat: Infinity, ease: "linear" }}
       };
       
     const [isStart, setIsStart] = useState(false);
-    const [cont, setCont] = useState(0);
+    const lenght = 2;
     
+    const [cont, setCont] = useState(0);  
+    
+    const [play, {stop}] = tracks[cont];  
 
   return (
     <div className="container">
@@ -42,20 +46,26 @@ export default function Emotion(props) {
               <Col xs={5}>
                 <div className={style.shadow}>
                   <motion.div className={style.disc} variants={Variants} animate={isStart? "start" : "stop"}>
-                    <img src={playlistImg[cont]}/>
+                    <img src={imgs[cont]}/>
                   </motion.div>
                 </div>
               </Col>
               <Col xs={7}>
-                <h2 className="h4 mt-md-3 mt-4 mx-2">{playlistTitle[cont]}</h2>
-                <p className="mx-4">{playlistArtist[cont]}</p>
+                <h2 className="h4 mt-md-3 mt-4 mx-2">{titles[cont]}</h2>
+                <p className="mx-4">{artists[cont]}</p>
                 <div className={style.btnPlayer + ' d-flex w-100 justify-content-center'}>
-                  <SkipBackwardFill/>
-                  <PlayFill onClick={() => setIsStart(!isStart)}/>
-                  <SkipForwardFill/>
+                  <SkipBackwardFill onClick={()=>{setCont((cont-1)%lenght); stop(); setIsStart(false);}}/>
+                  <PlayFill onClick={()=>{
+                    setIsStart(!isStart);
+                    if(isStart){
+                      stop();
+                    } else {
+                      play();
+                    }}}/>
+                  <SkipForwardFill onClick={()=>{setCont((cont+1)%lenght); stop(); setIsStart(false);}}/>
                 </div>
               </Col>
-            </Row>
+            </Row>        
         </div>
           
         <Button variant="outline-light" className={st + " btn-outline m-2  text-light"} href="#more">
@@ -66,7 +76,7 @@ export default function Emotion(props) {
         <section className={style.Spotify + ' text-center'}>
           <h2>Ascolta anche:</h2>
           <div className="d-flex flex-wrap justify-content-around">
-            {card.map (element => (<CardEmotion titolo={element}/> ))}
+            {card.map (element => (<CardEmotion titolo={element} key={element}/> ))}
           </div>
         </section>
 
@@ -81,7 +91,7 @@ export default function Emotion(props) {
                 </Col>
                 <Col md={6} className="text-center">
                   <iframe className={style.plSpotify}  src={"https://open.spotify.com/embed/playlist/"+idSpotify+"?utm_source=generator" }
-                  width="350" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                  width="350" height="380" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         
                 </Col>
             </Row>

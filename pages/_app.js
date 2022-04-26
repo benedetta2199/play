@@ -18,13 +18,15 @@ function MyApp({ Component, pageProps }) {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router.events])*/
+
+  const router = useRouter();
   
   return (
     <>
       <Head>
         <link rel="icon" href="/logo.png" />
       </Head>
-      <NavBar/>
+      <NavBar page={router.pathname}/>
       <main>
         <Component {...pageProps} />
       </main>

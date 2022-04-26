@@ -57,8 +57,8 @@ export default function CardEmotion(props) {
       <div className={`${style.card} ${stCard}`}>
         <img src={"https://play-experiences.vercel.app/emotion/"+titolo+".jpg"} alt=""/>
         <h2 className="text-capitalized mb-1">{titolo}</h2>
-        <p>{descrizione}</p>
-        <Button class={st + " text-light"} href={"./"+titolo}>Ascolta</Button>
+        <p className='text-left'>{descrizione}</p>
+        <Button className={st + " text-light"} href={"./"+titolo}>Ascolta</Button>
       </div>
       </div>
   )
