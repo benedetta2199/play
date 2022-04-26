@@ -82,7 +82,7 @@ export default function Emotion(props) {
         <section className={style.Spotify + ' text-center'}>
           <h2>Ascolta anche:</h2>
           <div className="d-flex flex-wrap justify-content-around">
-            {card.map (element => {
+            {card &&card.map (element => {
               if(element!== undefined){(<CardEmotion titolo={element} key={element}/>)}})}
           </div>
         </section>
