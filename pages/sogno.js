@@ -8,6 +8,7 @@ export default function Home() {
     linkImg="https://www.freepik.com/free-photo/caucasian-woman-s-portrait-isolated-blue-background-multicolored-neon-light_13636129.htm"
     player={<></>}
     st="btn_sg" color="cSogno"
+    card={["bellezza","calma","passione"]}
     cit="Se puoi sognarlo, puoi farlo!" 
     Acit="Walt Disney"
     idSpotify="06JKENbVcsDWzBNocudtcd"/>

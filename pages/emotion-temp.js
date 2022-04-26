@@ -4,10 +4,11 @@ import { motion } from "framer-motion"
 import { ChevronDoubleDown, PlayFill, SkipBackwardFill, SkipForwardFill } from 'react-bootstrap-icons';
 import { useState } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
+import CardEmotion from './card';
 
 export default function Emotion(props) {
 
-  const {title, linkImg, player, st, color, cit, Acit, idSpotify} = props;
+  const {title, linkImg, player, st, color, card, cit, Acit, idSpotify} = props;
 
     const playlistTitle = ["Into The Red",".Overdrive"]
     const playlistArtist = ["Trinity","Matrika"]
@@ -20,6 +21,7 @@ export default function Emotion(props) {
       
     const [isStart, setIsStart] = useState(false);
     const [cont, setCont] = useState(0);
+    
 
   return (
     <div className="container">
@@ -60,13 +62,20 @@ export default function Emotion(props) {
           <ChevronDoubleDown/><span className="mx-3">Ascolta di più</span>
         </Button>
         </section>
+        
+        <section className={style.Spotify + ' text-center'}>
+          <h2>Ascolta anche:</h2>
+          <div className="d-flex flex-wrap justify-content-around">
+            {card.map (element => (<CardEmotion titolo={element}/> ))}
+          </div>
+        </section>
 
-        <section className={style.Spotify}  id="more">
-            <Row className='my-5 pb-3 text-center'>
+        <section>
+            <Row className='mb-5 pb-3 text-center'>
                 <p className='m-0'>{cit}</p>
                 <p><i>{Acit}</i></p>
             </Row>
-            <Row>
+            <Row  id="more">
                 <Col md={6} className='d-flex align-items-center'>
                     <h2 className='display-2 px-4'>Ascolta le tue emozioni anche su Spotify</h2>
                 </Col>

@@ -34,7 +34,7 @@ nav img{width: 50px;}
 nav a{text-decoration: none; color: #fff; margin: auto 20px;}
 
 
-.btn-outline {background-color: transparent !important; box-shadow: 0 0 15px #85fff9, inset 0 0 10px #85deff; }
+.btn-outline {background-color: transparent !important; box-shadow: 0 0 15px #85fff9, inset 0 0 10px #85deff; border: inherit;}
 .btn-outline, .btn-outline *{font-family: 'Julius Sans One', sans-serif !important;}
 .btn-outline:hover {box-shadow: 0 0 15px #ff85e5, inset 0 0 10px #ce85ff;}
 .btn-outline:hover *{color: #e2e2e2 !important;}
@@ -97,7 +97,7 @@ footer img{width: 35px; height: 35px;}
 .cEnergia{text-shadow: 0 0 4px #0fb4f0;} .cEnergia:hover{color: #ff8a43;}
 .cFastidio{text-shadow: 0 0 4px #0ff0eb;} .cFastidio:hover{color: #ffcf1a;}
 .cGioia{text-shadow: 0 0 4px #0f56f0;} .cGioia:hover{color: #FAFF07;}
-.cPassione{text-shadow: 0 0 4px #44ff41;} .cPassione:hover{color: #adfc21;}
+.cPassione{text-shadow: 0 0 4px #ff47bc;} .cPassione:hover{color: #adfc21;}
 .cPaura{text-shadow: 0 0 4px #ff47fc;} .cPaura:hover{color: #44ff41;}
 .cSfida{text-shadow: 0 0 4px #ff8a43;} .cSfida:hover{color: #29f887;}
 .cSogno{text-shadow: 0 0 4px #ffb743;} .cSogno:hover{color: #0ff0eb;}
