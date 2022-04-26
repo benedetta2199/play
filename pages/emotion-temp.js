@@ -26,13 +26,7 @@ export default function Emotion(props) {
     const [cont, setCont] = useState(0);  
     
     const [play, {stop}] = tracks[cont];  
-
-    console.log(card);
-
-    if(card==undefined){
-      card=[];
-    }
-
+    
   return (
     <div className="container">
     <Head>
@@ -82,8 +76,7 @@ export default function Emotion(props) {
         <section className={style.Spotify + ' text-center'}>
           <h2>Ascolta anche:</h2>
           <div className="d-flex flex-wrap justify-content-around">
-            {card &&card.map (element => {
-              if(element!== undefined){(<CardEmotion titolo={element} key={element}/>)}})}
+            {card && card.map (element => <CardEmotion titolo={element} key={element}/>)}
           </div>
         </section>
 
