@@ -40,10 +40,10 @@ export default function CardEmotion(props) {
       descrizione="";
       st = "btn_pr"; stCard = style.cardPaura; stGlow = style.gPaura; break;
     case "sfida":
-      descrizione="";
+      descrizione="Stato d'animo di tensione ed adrenalina che precede uno scontro con qualcuno o se stesso.  Genera carica ed entusiasmo per affrontare le sfide prefissate.";
       st = "btn_sf"; stCard = style.cardSfida; stGlow = style.gSfida; break;
     case "sogno":
-      descrizione="";
+      descrizione="Stato emotivo in cui vola l'immaginazione e la fantasia crea scenari, più o meno reale, in cui regna gioia, bellezza e tutto sembra possibile, come in un mondo ideale.";
       st = "btn_sg"; stCard = style.cardSogno; stGlow = style.gSogno; break;
     case "trionfo":
         descrizione="Stato emotivo di clamore e potenza accompagnato da entusiasmo ed euforia, spesso dovuto a una splendida vittoria o al raggiungimento di un obiettivo.";
