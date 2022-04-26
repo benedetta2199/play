@@ -9,7 +9,7 @@ import useSound from 'use-sound';
 
 export default function Emotion(props) {
 
-  const {title, linkImg, player, st, color, card, cit, Acit, idSpotify} = props;
+  var {title, linkImg, player, st, color, card, cit, Acit, idSpotify} = props;
 
   const titles=['Into The Red', 'Overdrive'];
   const artists=['Trinity', 'Matrika'];
@@ -28,6 +28,10 @@ export default function Emotion(props) {
     const [play, {stop}] = tracks[cont];  
 
     console.log(card);
+
+    if(card==undefined){
+      card=[];
+    }
 
   return (
     <div className="container">
