@@ -3,15 +3,16 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 import Piano from '../src/piano';
 import style from '../style/index.module.css';
 import { SkipBackwardFill, SkipForwardFill, ChevronDoubleDown, ChevronDoubleRight } from 'react-bootstrap-icons';
+import Helmet from 'react-helmet';
 
 export default function Home() {
   return (
     <div className="container">
-      <Head>
+      <Helmet>
         <title>Play</title>
-      </Head>
+        <meta name="description" content="" />
+      </Helmet>
 
-      <main>
         <Row className="my-md-5 pt-3">
           <Col md={6} xs={12} className="my-md-5">
             <h1 className={style.title + " text-uppercase text-center w-100 mt-md-4 mt-2"}>
@@ -62,7 +63,6 @@ export default function Home() {
             </Col>
           </Row>     
         </Container>
-      </main>
     </div>
   )
 }

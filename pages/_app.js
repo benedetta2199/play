@@ -6,6 +6,7 @@ import NavBar from '../src/navbar';
 //import * as gtag from '../src/gtag'
 import "bootstrap/dist/css/bootstrap.css";
 import Footer from '../src/footer';
+import Helmet from 'react-helmet';
 
 function MyApp({ Component, pageProps }) {
   /*const router = useRouter()
@@ -22,14 +23,19 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   
   return (
-    <html lang="it">
+    <>
+      <Helmet htmlAttributes={{ lang : "it"}}>
+        <meta charSet="utf-8" />
+      </Helmet>
       <Head>
         <link rel="icon" href="/logo.png" />
       </Head>
       <NavBar page={router.pathname}/>
-      <Component {...pageProps} />
+      <main>
+        <Component {...pageProps} />
+      </main>
       <Footer/>
-    </html>
+    </>
   )
 }
 

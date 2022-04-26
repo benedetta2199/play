@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import CardEmotion from './card';
 import useSound from 'use-sound';
+import Helmet from 'react-helmet';
 
 export default function Emotion(props) {
 
@@ -29,11 +30,11 @@ export default function Emotion(props) {
     
   return (
     <div className="container">
-    <Head>
-      <title>Play - Ascolta l'{title}</title>
-    </Head>
+      <Helmet>
+        <title>Play - {title}</title>
+        <meta name="description" content="" />
+      </Helmet>
 
-    <main>
       <div className={style.divHead + " imgCredit"}>
         <img src={"./emotion/"+title+".jpg"} className={style.imgHead} alt=""/>
         <a href={linkImg} className={color + " credit"} target="_blank">created by master1305 - www.freepik.com</a>
@@ -96,9 +97,6 @@ export default function Emotion(props) {
                 </Col>
             </Row>
         </section>
-        
-    </main>
-
   </div>
   )
 }

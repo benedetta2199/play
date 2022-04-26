@@ -1,14 +1,14 @@
 import Head from 'next/head'
+import Helmet from 'react-helmet'
 import CardEmotion from './card'
 
 export default function Home() {
   return (
     <div className="container">
-    <Head>
-      <title>Create Next App</title>
-    </Head>
-
-    <main>
+      <Helmet>
+          <title>Play - Emozioni</title>
+          <meta name="description" content="" />
+      </Helmet>
       <h1 className='text-center'>Le 13 emozioni</h1>
       <div className="d-flex flex-wrap justify-content-around">
         <CardEmotion titolo="ansia"/>
@@ -25,7 +25,6 @@ export default function Home() {
         <CardEmotion titolo="trionfo"/>
         <CardEmotion titolo="tristezza"/>
       </div>
-    </main>
 
   </div>
   )
