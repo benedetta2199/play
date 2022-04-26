@@ -65,7 +65,7 @@
     100% {transform: rotate(360deg);}
   }
 
-.card p {font-size: 14px; width: 90%; padding-left: 6px;}
+.card p {font-size: 14px !important; width: 90%; padding-left: 6px; text-align: start;}
 
 .card a {
   position:absolute; 
