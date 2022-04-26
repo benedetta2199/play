@@ -43,7 +43,7 @@ export default function Home() {
               <h3 className="display-4 text-capitalize">Il suono delle emozioni</h3>
               <Piano/>
               <p>Suona lo stato d'animo che stai provando o che vuoi provare per scoprire i brani che possono suscitarlo</p>
-              <Button variant="outline-light" className="btn-outline my-3" href="/emotion">
+              <Button variant="outline-light" className="btn-outline my-3" href="/emozioni">
                 <ChevronDoubleRight/> <span className="mx-3">Scopri di più</span>
               </Button>
             </Col>
