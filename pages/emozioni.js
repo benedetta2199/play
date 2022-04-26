@@ -9,7 +9,7 @@ export default function Home() {
     </Head>
 
     <main>
-      <h1>Emotion</h1>
+      <h1 className='text-center'>Le 13 emozioni</h1>
       <div className="d-flex flex-wrap justify-content-around">
         <CardEmotion titolo="ansia"/>
         <CardEmotion titolo="bellezza"/>
@@ -24,9 +24,6 @@ export default function Home() {
         <CardEmotion titolo="sogno"/>
         <CardEmotion titolo="trionfo"/>
         <CardEmotion titolo="tristezza"/>
-
-
-
       </div>
     </main>
 
