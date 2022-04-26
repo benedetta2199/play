@@ -22,16 +22,14 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   
   return (
-    <>
+    <html lang="it">
       <Head>
         <link rel="icon" href="/logo.png" />
       </Head>
       <NavBar page={router.pathname}/>
-      <main>
-        <Component {...pageProps} />
-      </main>
+      <Component {...pageProps} />
       <Footer/>
-    </>
+    </html>
   )
 }
 

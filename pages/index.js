@@ -55,7 +55,7 @@ export default function Home() {
             <Col>
               <h3 className="display-4 text-capitalize">Cervello e musica</h3>
               
-              <p id="more">Suona lo stato d'animo che stai provando o che vuoi provare per scoprire i brani che possono suscitarlo</p>
+              <p>Lorem ???</p>
               <Button variant="outline-light" className="btn-outline my-3" href="/idea">
                 <ChevronDoubleRight/> <span className="mx-3">Scopri di più</span>
               </Button>
