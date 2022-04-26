@@ -15,17 +15,19 @@ export default function Emotion(props) {
   const artists=['Trinity', 'Matrika'];
   const tracks=[useSound('./music/sfida/1.mp3'),useSound('./music/sfida/2.mp3')];
   const imgs=["./music/sfida/1.jpg","./music/sfida/2.jpg"];
-    const Variants = {
-        stop: {rotate: 0},
-        start: {rotate: 360,transition: { duration: 8, repeat: Infinity, ease: "linear" }}
-      };
-      
+  const Variants = {
+      stop: {rotate: 0},
+      start: {rotate: 360,transition: { duration: 8, repeat: Infinity, ease: "linear" }}
+    };
+    
     const [isStart, setIsStart] = useState(false);
     const lenght = 2;
     
     const [cont, setCont] = useState(0);  
     
     const [play, {stop}] = tracks[cont];  
+
+    console.log(card);
 
   return (
     <div className="container">
@@ -76,7 +78,7 @@ export default function Emotion(props) {
         <section className={style.Spotify + ' text-center'}>
           <h2>Ascolta anche:</h2>
           <div className="d-flex flex-wrap justify-content-around">
-            {card.map (element => (<CardEmotion titolo={element} key={element}/> ))}
+            {card.map (element => (<CardEmotion titolo={element} key={element}/>))}
           </div>
         </section>
 
