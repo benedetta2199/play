@@ -84,7 +84,7 @@ export default function Emotion(props) {
         <section>
             <Row className='mb-5 pb-3 text-center'>
                 <p className='m-0'>{cit}</p>
-                <p><i>{Acit}</i></p>
+                <p><em className='font-italic'>{Acit}</em></p>
             </Row>
             <Row  id="more">
                 <Col md={6} className='d-flex align-items-center'>

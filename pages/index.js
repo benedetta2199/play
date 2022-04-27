@@ -54,7 +54,7 @@ export default function Home() {
         <Container className="text-light text-center my-md-5 pt-md-5">
           <Row className="mt-5 pt-5">
             <Col>
-              <h3 className="display-4 text-capitalize">Cervello e musica</h3>
+              <h3 className="display-4 text-capitalize">Dall' Idea al Progetto</h3>
               
               <p>Lorem ???</p>
               <Button variant="outline-light" className="btn-outline my-3" href="/idea">

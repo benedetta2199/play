@@ -48,7 +48,7 @@ function NavBar(props) {
                     <Nav.Link href="/trionfo" className={(page=='/triondo'? 'active ':'') + 'd-md-none py-0 my-0 px-3'}>Trionfo</Nav.Link>
                     <Nav.Link href="/tristezza" className={(page=='/tristezza'? 'active ':'') + 'd-md-none py-0 my-0 px-3'}>Tristezza</Nav.Link>
                         
-                    <Nav.Link href="/" className={(page=='/idea'? 'active':'')}>L'idea</Nav.Link>
+                    <Nav.Link href="/idea" className={(page=='/idea'? 'active':'')}>L'idea</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

@@ -10,6 +10,7 @@ export default function Home() {
           <meta name="description" content="" />
       </Helmet>
       <h1 className='text-center'>Le 13 emozioni</h1>
+      <p className='text-center'>Servendosi di analisi statistiche, i ricercatori hanno concluso che l'esperienza soggettiva della musica può essere mappata all'interno di 13 emozioni chiave:</p>
       <div className="d-flex flex-wrap justify-content-around">
         <CardEmotion titolo="ansia"/>
         <CardEmotion titolo="bellezza"/>

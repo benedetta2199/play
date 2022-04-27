@@ -22,8 +22,8 @@ export default function Home() {
         <Row className="d-flex flex-column align-items-center">
           <Col md={8}>
             <p>
-            Il sito, rivolto perlopiù ai giovani, ha lo scopo di offrire un servizio di streaming musicale diverso da quelli esistenti; ormai esistono molteplici servizi che consentono all'utente di scegliere tra milioni di brani (Spotify, YT-Music, Apple Music...). Invece l'innovazione di "Play" è quella di scegliere per l'utente, in base al suo stato emotivo.
-            Le emozioni presenti sono 13, in particolare sono le stesse individuate da uno studio dell'Università di Berkeley dopo aver mappato le risposte emotive di oltre 2500 persone all'ascolto di molteplici brani.
+            Il sito, rivolto in modo particolare ai giovani, è una libreria musicale eclettica, organizzata attraverso l'emozione e i sentimenti che scaturiscono da ogni brano, per offrire un servizio di streaming musicale diverso da quelli esistenti che consentono all'utente di scegliere tra milioni di brani (Spotify, YT-Music, Apple Music...). L'innovazione di "Play" è quella di scegliere per l'utente, in base al suo stato emotivo.
+            Le emozioni presenti sono 13, le stesse individuate dall'Università di Berkeley dopo aver mappato le risposte emotive di oltre 2500 persone all'ascolto di molteplici brani.
             </p>
            
           </Col>

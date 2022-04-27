@@ -37,7 +37,7 @@ export default function CardEmotion(props) {
       descrizione="";
       st = "btn_pass"; stCard = style.cardPassione; stGlow = style.gPassione; break;
     case "paura":
-      descrizione="";
+      descrizione="Stato emotivo di timore di apprensione in prossimità di un vero o presunto pericolo, arditezza temeraria che nasce per istinto di conservazione in una situazione di estremo pericolo.";
       st = "btn_pr"; stCard = style.cardPaura; stGlow = style.gPaura; break;
     case "sfida":
       descrizione="Stato d'animo di tensione ed adrenalina che precede uno scontro con qualcuno o se stesso.  Genera carica ed entusiasmo per affrontare le sfide prefissate.";
