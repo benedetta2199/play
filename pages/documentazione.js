@@ -69,6 +69,7 @@ export default function Home() {
                   <small>Il design scalabile che rende difficile utilizzo mobile </small>
                   <small>La difficoltà di scegliere uno specifico brano</small>
                   <small>I brani presenti solo in maniera incolpeta</small>
+                  <small>Brani soprattutto melodici e non musicali</small>
                 </Col>
               </Row>
 

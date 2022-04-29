@@ -34,13 +34,13 @@ export default function CardEmotion(props) {
       descrizione="";
       st = "btn_gi"; stCard = style.cardGioia; stGlow = style.gGioia; break;
     case "passione":
-      descrizione="";
+      descrizione="Stato emotivo intenso e coinvolgente, scaturito dall'attrazione verso un'altra persona. Capace di dominare una persona è in contrasto con la razionalità e dell'obiettività";
       st = "btn_pass"; stCard = style.cardPassione; stGlow = style.gPassione; break;
     case "paura":
       descrizione="Stato emotivo di timore di apprensione in prossimità di un vero o presunto pericolo, arditezza temeraria che nasce per istinto di conservazione in una situazione di estremo pericolo.";
       st = "btn_pr"; stCard = style.cardPaura; stGlow = style.gPaura; break;
     case "sfida":
-      descrizione="Stato d'animo di tensione ed adrenalina che precede uno scontro con qualcuno o se stesso.  Genera carica ed entusiasmo per affrontare le sfide prefissate.";
+      descrizione="Stato d'animo di tensione ed adrenalina che precede uno scontro con qualcuno o se stesso. Genera carica ed entusiasmo per affrontare le sfide prefissate.";
       st = "btn_sf"; stCard = style.cardSfida; stGlow = style.gSfida; break;
     case "sogno":
       descrizione="Stato emotivo in cui vola l'immaginazione e la fantasia crea scenari, più o meno reale, in cui regna gioia, bellezza e tutto sembra possibile, come in un mondo ideale.";
