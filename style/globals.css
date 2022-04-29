@@ -105,7 +105,7 @@ footer img{width: 35px; height: 35px;}
 .cTrionfo{text-shadow: 0 0 4px #c0ff41} .cTrionfo:hover{color: #6554ff}
 .cTristezza{text-shadow: 0 0 4px #f6ff0b;} .cTristezza:hover{color: #bb17ff;}
 
-
+.invisible{display: none !important; visibility: hidden; height: 0; width: 0; padding: 0; margin: 0;}
 
 
 

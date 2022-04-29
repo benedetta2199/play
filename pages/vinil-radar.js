@@ -6,12 +6,10 @@ import {Chart as ChartJS, RadialLinearScale,PointElement,LineElement,Filler,Tool
 import { Radar } from 'react-chartjs-2';
 
 export default function VinilRadar(props) {
-  const {dts, dte, title, id} = props;
+  const {dts, dte, title, id, v} = props;
   const color = [];
   const bg = [];
   const emotion = [];
-  const spotify = <iframe src={"https://open.spotify.com/embed/track/"+id} style={{borderRadius:'10px', boxShadow:'0 0 15px #000'}}
-        width="180" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"/>
 
   if(dte){
     dte.forEach(element => {
@@ -29,7 +27,6 @@ export default function VinilRadar(props) {
         case 'Sogno': emotion.push('   Sogno    '); color.push('#0ff0eb'); bg.push('#0ff0eb90'); break
         case 'Trionfo': emotion.push('  Trionfo   '); color.push('#6554ff'); bg.push('#6554ff90'); break
         case 'Tristezza': emotion.push(' Tristezza  '); color.push('#bb17ff'); bg.push('#bb17ff90'); break
-        
       }
     });
   }
@@ -59,7 +56,7 @@ const options= {
       width: '100px'
     },
     ticks:{display:false},
-    min: 0,
+    min: 0, max: 50
     }
   },
   plugins: {
@@ -73,19 +70,20 @@ const options= {
     }
   }
 };
-
   return (
-    <div>
-      <iframe src={"https://open.spotify.com/embed/track/"+id+"?utm_source=generator"} width="80" height="80"
-        style={{borderRadius:'10px', boxShadow:'0 0 15px #000'}}
-        frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"/>
-      <div className='d-flex flex-wrap justify-content-start' style={{height:'50px'}}>        
-        <h2 className='h5 m-0 p-3'>{title}</h2>
+    <>
+      <div className={v?'':'invisible '+'px-5 mx-2'} style={{width:'390px'}}>
+        <div className='d-flex flex-wrap justify-content-start' style={{height:'80px',}}>        
+          <h2 className='h6 m-0 px-2 py-3'>{title}</h2>
+          </div>
       </div>
-      <div style={{width:"340px",height:"350px", position:'relative', top:'-30px'}}>
-          <Radar data={data} options={options} 
-          style={{backgroundImage:"url(./disk.png)",backgroundSize:'contain',backgroundPosition: "center",backgroundRepeat: "no-repeat"}}/>
-      </div>
-    </div>
+      {
+        v && (
+          <div style={{width:"340px",height:"350px", position:'relative', top:'-85px'}}>
+              <Radar data={data} options={options} 
+              style={{backgroundImage:"url(./disk.png)",backgroundSize:'contain',backgroundPosition: "center",backgroundRepeat: "no-repeat"}}/>
+          </div>)
+      }
+    </>
   )
 }
