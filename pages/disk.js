@@ -31,7 +31,7 @@ export default function Disk() {
         {disk.map((e,i)=>{
           return(<div className='d-flex flex-column justify-content-center px-2' key={i}>
             <iframe src={"https://open.spotify.com/embed/track/"+e.id} style={{borderRadius:'10px', boxShadow:'0 0 15px #000'}} width="80" height="80"/>
-            <Button className='btn-sm mt-2 py-1 btn-secondary' 
+            <Button className='btn-sm mt-2 py-1 btn-secondary mb-2' 
             onClick={()=>{setDte(e.dte);setDts(e.dts);setTitle(title);}}>Dati</Button>
           </div>)
         })}
