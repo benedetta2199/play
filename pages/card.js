@@ -25,13 +25,13 @@ export default function CardEmotion(props) {
       descrizione="Stato di allontanamento delle precauzioni e leggerezza d'animo, solitamente dovuto ad attività o compagnia piacevoli. Permette distoglie l'attenzione dalle fatiche e dalle attività più serie.";
       st = "btn_dv"; stCard = style.cardDivertimento; stGlow = style.gDivertimento; break;        
     case "energia":
-      descrizione="";
+      descrizione="Stato emotivo di dinamismo e di forza irrefrenabile. Accompagnato da una sensazione di potenza e dalla percezione e dalla voglia di poter fare qualunque cosa.";
       st = "btn_en"; stCard = style.cardEnergia; stGlow = style.gEnergia; break;    
     case "fastidio":
-      descrizione="";
+      descrizione="Stato d'animo d'irritazione per qualcosa o qualcuno che può procurare sofferenza, violenza e una scarica irrefrenabile.";
       st = "btn_fs"; stCard = style.cardFastidio; stGlow = style.gFastidio; break;
     case "gioia":
-      descrizione="";
+      descrizione="Stato emotivo di viva, completa, incontenibile soddisfazione. È un'intensa e piacevole emozione e si manifesta con spensieratezza, risate e allegria. ";
       st = "btn_gi"; stCard = style.cardGioia; stGlow = style.gGioia; break;
     case "passione":
       descrizione="Stato emotivo intenso e coinvolgente, scaturito dall'attrazione verso un'altra persona. Capace di dominare una persona è in contrasto con la razionalità e dell'obiettività";

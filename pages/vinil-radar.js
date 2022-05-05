@@ -70,8 +70,7 @@ const options= {
   }
 };
   return (
-    <div style={{width:"500px",height:"500px"}}>
-        <h2 className='text-light display-1'>{title}</h2>
+    <div style={{width:"500px",height:"430px", position:'relative', top:'-50px'}}>
         <Radar data={data} options={options} 
         style={{backgroundImage:"url(./disk.png)",backgroundSize:'cover',backgroundPosition: "center",backgroundRepeat: "no-repeat"}}/>
     </div>
