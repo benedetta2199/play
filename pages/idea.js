@@ -65,7 +65,15 @@ export default function Home() {
             <Disk index={currentIndex}/>
             </Col>
             <Col xs={12}>
-              <p className='text-center w-50 mx-auto'>
+              <p className={style.text+' text-center'}>
+                Più studi hanno dimostrato che ogni brano musicale è in grado di suscitare emozioni... la scoperta interessentante dello studio 
+                dell'Università di Berkeley che le emozioni suscitate in persone con la stessa cultura, provenienza... sono le perlopiù le stesse.
+              </p>
+            </Col>
+          </Row>  
+          <Row>
+             <Col xs={12}>
+              <p className={style.text+' text-center'}>
                 Più studi hanno dimostrato che ogni brano musicale è in grado di suscitare emozioni... la scoperta interessentante dello studio 
                 dell'Università di Berkeley che le emozioni suscitate in persone con la stessa cultura, provenienza... sono le perlopiù le stesse.
               </p>

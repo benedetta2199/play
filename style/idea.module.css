@@ -10,6 +10,7 @@
 .description{font-size: 22px;}
 .titleCommand{font-size: 1.8rem; margin: 0 20px;}
 .imgHead{mix-blend-mode: lighten; position: absolute; left: 0; top:60px; width: 80%;}
+.text{width:60%; margin: 0 20%;}
 
 @media only screen and (max-width: 600px) {
     .logo{width: 50px;}
@@ -25,4 +26,5 @@
     .description{font-size: 16px; text-align: center;}
     .imgHead{ position: absolute; right: 0px; top: 120px; width: 100%;}
     .img_girl{width: 90%;}
+    .text{width:100%;}
   }
