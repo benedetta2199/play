@@ -8,7 +8,7 @@ function Footer() {
         <footer>
             <Container>
             <Row className='pt-5'>
-                <Col md={4}>
+                <Col md={3}>
                     <div className="d-flex align-items-center">
                     <img src="/logo.png" className='mx-2' alt=""/>
                     <h2 className='m-0'>Play</h2>
@@ -24,9 +24,9 @@ function Footer() {
                     </ul>
                     </div>
                 </Col>
-                <Col md={8} className='d-flex justify-content-end'>
+                <Col md={9} className='d-flex justify-content-end'>
                     <Row className='w-75 text-end text-light'>
-                        <Col xs={5}><Nav.Link href='/' className='text-light text-decoration-none'>Home</Nav.Link></Col>
+                        <Col xs={4}><Nav.Link href='/' className='text-light text-decoration-none'>Home</Nav.Link></Col>
                         <Col xs={4}>
                             <NavDropdown title="Emozioni" menuVariant="dark" className={style.dropdown}>
                                 <NavDropdown.Item href="/emozioni" className='px-2 text-end'>Emozioni</NavDropdown.Item>
@@ -46,7 +46,7 @@ function Footer() {
                                 <NavDropdown.Item href="/tristezza" className='px-1'>Tristezza</NavDropdown.Item>
                             </NavDropdown>
                         </Col>
-                        <Col xs={3}><Nav.Link href='/idea' className='text-light text-decoration-none'>Progetto</Nav.Link></Col>
+                        <Col xs={4}><Nav.Link href='/idea' className='text-light text-decoration-none'>Progetto</Nav.Link></Col>
                     </Row>
                 </Col>
             </Row>
