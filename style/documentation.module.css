@@ -1,3 +1,8 @@
 .graph{width: 100%;}
+.nav_tree{width: 60%; margin: 0 auto;}
 
 .c p {text-align: justify;}
+
+@media only screen and (max-width: 600px) {
+    .nav-tree{width: 90%; margin: 0 auto;}
+  }

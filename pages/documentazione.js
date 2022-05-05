@@ -90,8 +90,13 @@ export default function Home() {
             </Col>
         </Row>
        
-        <h3 className='text-center display-6 mt-3'>Struttura e layout</h3>
+        <h3 className='text-center display-6 mt-3 pt-4'>Struttura e layout</h3>
         <h4 className='text-center h-3 mt-1'>Architettura del sito</h4>
+        <Row className="d-flex flex-column align-items-center">
+          <Col md={7} xs={12} className='d-flex text-center'>
+            <img src="./graph/navigatio-tree.png" className={'w-100'} alt=""/>
+          </Col>
+        </Row>
         <h4 className='text-center h-3 mt-1'>Wireframe</h4>
         <h4 className='text-center h-3 mt-1'>Look and Feel</h4>
 

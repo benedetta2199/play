@@ -1,5 +1,4 @@
 .logo{width: 100px;}
-.title{margin-bottom: 25rem;}
 .subtitle{
     position: absolute;
     font-size: 4.7rem;
@@ -14,7 +13,6 @@
 
 @media only screen and (max-width: 600px) {
     .logo{width: 50px;}
-    .title{padding-left: 0;  margin-bottom: 180px;}
     .title *{font-size: 1rem;}
     .subtitle{
         font-size: 2rem;
