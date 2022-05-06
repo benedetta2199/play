@@ -4,6 +4,7 @@ import Piano from '../src/piano';
 import style from '../style/index.module.css';
 import { SkipBackwardFill, SkipForwardFill, ChevronDoubleDown, ChevronDoubleRight } from 'react-bootstrap-icons';
 import Helmet from 'react-helmet';
+import { Link } from 'react-scroll/modules';
 
 export default function Home() {
   return (
@@ -25,8 +26,10 @@ export default function Home() {
               Scopri un nuovo modo di ascoltare la musica.
               <br/> Lasciati guidare dalle emozioni per trovare il brano di cui hai bisgno.
               <br/>
-              <Button variant="outline-light" className="btn-outline m-5 my-4" href="#more">
+              <Button variant="outline-light" className="btn-outline m-5 my-4" >
+                <Link to="more" spy={true}  smooth={true} offset={-100} duration={500}>
                 <ChevronDoubleDown/> <span className="mx-3">Scopri di più</span> <ChevronDoubleDown/>
+                </Link>
               </Button>
             </p>
           </Col>

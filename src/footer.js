@@ -46,7 +46,7 @@ function Footer() {
                                 <NavDropdown.Item href="/tristezza" className='px-1'>Tristezza</NavDropdown.Item>
                             </NavDropdown>
                         </Col>
-                        <Col xs={4}><Nav.Link href='/idea' className='text-light text-decoration-none'>Progetto</Nav.Link></Col>
+                        <Col xs={4}><Nav.Link href='/idea' className='text-light text-decoration-none pr-2'>Progetto</Nav.Link></Col>
                     </Row>
                 </Col>
             </Row>

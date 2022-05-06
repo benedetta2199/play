@@ -7,6 +7,7 @@ import { Button, Col, Row } from 'react-bootstrap';
 import CardEmotion from './card';
 import useSound from 'use-sound';
 import Helmet from 'react-helmet';
+import { Link } from 'react-scroll/modules';
 
 export default function Emotion(props) {
 
@@ -69,8 +70,10 @@ export default function Emotion(props) {
             </Row>        
         </div>
           
-        <Button variant="outline-light" className={st + " btn-outline m-2  text-light"} href="#more">
+        <Button variant="outline-light" className={st + " btn-outline m-2  text-light"}>
+          <Link to="more" spy={true}  smooth={true} offset={-100} duration={500}>
           <ChevronDoubleDown/><span className="mx-3">Ascolta di più</span>
+          </Link>
         </Button>
         </section>
         
