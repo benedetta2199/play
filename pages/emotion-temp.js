@@ -13,7 +13,7 @@ import emailjs from 'emailjs-com'
 export default function Emotion(props) {
 
   const {title, linkImg, st, color, card, cit, Acit, idSpotify, t, a, trak, img, n} = props;
-  console.log(title);
+  console.log(title + trak.lenght);
 
 
   var tracks=[];
