@@ -1,5 +1,6 @@
 import useSound from 'use-sound';
 import Emotion from './emotion-temp';
+import Helmet from 'react-helmet';
 
 export default function Home() {
 

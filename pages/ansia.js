@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet';
 import useSound from 'use-sound';
 import Emotion from './emotion-temp';
 export default function Home() {
@@ -12,7 +13,6 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        
         <title>Play - Ascolta Musica per l'Ansia</title>
         <meta name="description"
           content="Ascolta la musica giusta per calmare la tua ansia. Vivi un esperienza unica... ascolta le tue emozioni gratuitamente!" />
