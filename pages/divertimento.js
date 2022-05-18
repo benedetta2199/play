@@ -8,8 +8,8 @@ export default function Home() {
 
   const titles=['Anywhere '];
   const artists=['Ikson'];
-  const tracks=[useSound('./music/'+name+'/1.mp3')];
-  const imgs=["./music/"+name+"/1.jpg"];
+  const tracks=[useSound('./music/'+name+'/1.mp3'),useSound('./music/'+name+'/1.mp3')];
+  const imgs=["./music/"+name+"/1.jpg","./music/"+name+"/1.jpg"];
 
   return (
     <>
