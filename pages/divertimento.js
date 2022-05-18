@@ -4,6 +4,8 @@ import Emotion from './emotion-temp';
 
 export default function Home() {
 
+  const controls = new THREE.OrbitControls();
+
   const name = 'divertimento';
 
   const titles=['Anywhere '];
