@@ -12,7 +12,7 @@ import emailjs from 'emailjs-com'
 
 export default function Emotion(props) {
 
-  var {title, linkImg, st, color, card, cit, Acit, idSpotify, t, a, trak, img, n} = props;
+  const {title, linkImg, st, color, card, cit, Acit, idSpotify, t, a, trak, img, n} = props;
   var inputTitle;
 
   const controls = useAnimation();
@@ -32,7 +32,7 @@ export default function Emotion(props) {
     
     const [cont, setCont] = useState(0);  
     
-    const [play, {stop,pause}] = tracks && tracks[cont];  
+    const [play, {stop,pause}] = track && track[cont];  
 
     const [char, setButton] = useState(<PlayFill/>);
 
