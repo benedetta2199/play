@@ -61,7 +61,7 @@ export default function Emotion(props) {
               <Col xs={5}>
                 <div className={style.shadow}>
                   <motion.div className={style.disc} animate={controls} variants={Variants}>
-                    <img src={/*imgs && imgs[cont]} alt={"immagine profilo di " + artists[cont]}*/}/>
+                    <img src=''{/*imgs && imgs[cont]} alt={"immagine profilo di " + artists[cont]}*/}/>
                   </motion.div>
                 </div>
               </Col>
