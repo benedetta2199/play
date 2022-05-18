@@ -29,6 +29,7 @@ export default function Emotion(props) {
       case "sogno":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')];break;
       case "trionfo":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3')];break;
       case "tristezza":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3')];break;
+      default: tracks=[];break;
     }
 
     console.log(title + " - " + tracks.length);
