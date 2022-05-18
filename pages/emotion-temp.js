@@ -71,7 +71,7 @@ export default function Emotion(props) {
       }
     }
     
-    const x = tile ? (<div classtitle="container">
+    const x = title ? (<div classtitle="container">
 
       <div classtitle={style.divHead + " imgCredit"}>
         <img src={"./emotion/"+title+".jpg"} classtitle={style.imgHead} alt=""/>
