@@ -33,10 +33,11 @@ export default function Emotion(props) {
   var inputTitle;
 
   const controls = useAnimation();
-  const traks = [];
+  const tracks = trak;
+  const track = new Array(n);
   for(var i=0; i<n; i++){
-    traks.push(useSound('./music/'+title+'/'+(i+1)+'.mp3'));
-    console.log(i);
+    track.push(useSound('./music/'+title+'/'+(i+1)+'.mp3'));
+    console.log(i+1);
   }
   const titles=t;
   const artists=a;
@@ -52,8 +53,7 @@ export default function Emotion(props) {
     
     const [cont, setCont] = useState(0);  
     
-  console.log("AA"+traks);
-    const [play, {stop,pause}] = traks ? traks[cont] : useSound('./music/'+titles[cont]+'/1.mp3');  
+    const [play, {stop,pause}] = tracks && tracks[cont];  
 
     const [char, setButton] = useState(<PlayFill/>);
 
