@@ -1,40 +1,54 @@
 import Head from 'next/head'
 import style from '../style/page_emotion.module.css';
-import { motion } from "framer-motion"
-import { ChevronDoubleDown, PlayFill, SkipBackwardFill, SkipForwardFill } from 'react-bootstrap-icons';
+import { motion, useAnimation } from "framer-motion"
+import { ChevronDoubleDown, PauseFill, PlayFill, SkipBackwardFill, SkipForwardFill } from 'react-bootstrap-icons';
 import { useState } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
-import CardEmotion from './card';
+import CardEmotion from '../src/card';
 import useSound from 'use-sound';
 import Helmet from 'react-helmet';
 import { Link } from 'react-scroll/modules';
+import emailjs from 'emailjs-com'
 
 export default function Emotion(props) {
 
-  var {title, linkImg, player, st, color, card, cit, Acit, idSpotify} = props;
+  var {title, linkImg, st, color, card, cit, Acit, idSpotify, t, a, trak, img, n} = props;
+  var inputTitle;
 
-  const titles=['Into The Red', 'Overdrive'];
-  const artists=['Trinity', 'Matrika'];
-  const tracks=[useSound('./music/sfida/1.mp3'),useSound('./music/sfida/2.mp3')];
-  const imgs=["./music/sfida/1.jpg","./music/sfida/2.jpg"];
+  const controls = useAnimation();
+
+  const titles=t;
+  const artists=a;
+  const tracks=trak;
+  const imgs=img;
   const Variants = {
       stop: {rotate: 0},
-      start: {rotate: 360,transition: { duration: 8, repeat: Infinity, ease: "linear" }}
+      start: {rotate: 360,transition: { duration: 6, repeat: Infinity, ease: "linear" }}
     };
     
     const [isStart, setIsStart] = useState(false);
-    const lenght = 2;
+    const lenght = n;
+    console.log(lenght)
     
     const [cont, setCont] = useState(0);  
     
-    const [play, {stop}] = tracks[cont];  
+    const [play, {stop,pause}] = tracks[cont];  
+
+    const [char, setButton] = useState(<PlayFill/>);
+
+    function sendEmail(e) {
+      e.preventDefault();
+      emailjs.sendForm('service_qh75kq8', 'template_91ffk65', e.target, 'user_PQfmzyWoDL9kp4BkhLqDZ')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+      inputTitle.value=""
+    }
     
   return (
     <div className="container">
-      <Helmet>
-        <title>Play - {title}</title>
-        <meta name="description" content="" />
-      </Helmet>
 
       <div className={style.divHead + " imgCredit"}>
         <img src={"./emotion/"+title+".jpg"} className={style.imgHead} alt=""/>
@@ -42,12 +56,11 @@ export default function Emotion(props) {
       </div>
       <section className={style.sectionOne}>
         <h1 className={style.title}>{title}</h1>
-        {player}
         <div className={style.player + ' d-flex'}>
             <Row className='w-100'>
               <Col xs={5}>
                 <div className={style.shadow}>
-                  <motion.div className={style.disc} variants={Variants} animate={isStart? "start" : "stop"}>
+                  <motion.div className={style.disc} animate={controls} variants={Variants}>
                     <img src={imgs[cont]} alt=""/>
                   </motion.div>
                 </div>
@@ -56,25 +69,31 @@ export default function Emotion(props) {
                 <h2 className="h4 mt-md-3 mt-4 mx-2">{titles[cont]}</h2>
                 <p className="mx-4">{artists[cont]}</p>
                 <div className={style.btnPlayer + ' d-flex w-100 justify-content-center'}>
-                  <SkipBackwardFill onClick={()=>{setCont((cont-1)%lenght); stop(); setIsStart(false);}}/>
-                  <PlayFill onClick={()=>{
-                    setIsStart(!isStart);
-                    if(isStart){
-                      stop();
-                    } else {
-                      play();
-                    }}}/>
-                  <SkipForwardFill onClick={()=>{setCont((cont+1)%lenght); stop(); setIsStart(false);}}/>
+                  <SkipBackwardFill onClick={()=>{setCont((cont+lenght-1)%lenght); stop(); setIsStart(false); controls.start("stop"); setButton(<PlayFill/>)}}/>
+                  <a className='m-0 p-0'
+                    onClick={()=>{setIsStart(!isStart);
+                                  if(isStart){pause(); controls.stop(); setButton(<PlayFill/>);}
+                                  else {play(); controls.start("start"); setButton(<PauseFill/>)}}}>
+                    {char}
+                  </a>
+                  <SkipForwardFill onClick={()=>{setCont((cont+1)%lenght); stop(); setIsStart(false); controls.start("stop"); setButton(<PlayFill/>)}}/>
                 </div>
               </Col>
             </Row>        
         </div>
           
-        <Button variant="outline-light" className={st + " btn-outline m-2  text-light"}>
-          <Link to="more" spy={true}  smooth={true} offset={-100} duration={500}>
+        <Link to="more" spy={true}  smooth={true} offset={-100} duration={500} className={st+" btn btn-outline btn-outline-light m-5 my-4"}>
           <ChevronDoubleDown/><span className="mx-3">Ascolta di più</span>
-          </Link>
-        </Button>
+        </Link>
+
+          <form onSubmit={sendEmail} class={style.consigli + ' d-flex flex-column'}>
+            <label for="message">Consigliaci altri brani:</label>
+            <input type="hidden" name="title" id="title" value={title}/>
+            <input type="text" name="message" id="message" class="text-dark" ref={e => inputTitle = e}/>
+            <div className='text-md-end text-center'>
+              <input type="submit" value="Invia" className={st+' btn btn-sm border-light btn-outline text-light'}/>
+            </div>
+          </form>
         </section>
         
         <section className={style.Spotify + ' text-center'}>

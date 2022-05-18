@@ -11,6 +11,8 @@
 .imgHead{mix-blend-mode: lighten; position: absolute; left: 0; top:60px; width: 80%;}
 .text{width:60%; margin: 0 20%;}
 
+.rowIframe iframe{width:80%; height:280px}
+
 @media only screen and (max-width: 600px) {
     .logo{width: 50px;}
     .title *{font-size: 1rem;}
@@ -24,5 +26,7 @@
     .description{font-size: 16px; text-align: center;}
     .imgHead{ position: absolute; right: 0px; top: 120px; width: 100%;}
     .img_girl{width: 90%;}
-    .text{width:100%;}
+    .text{width:98%; margin: 0 1%;}
+    
+    .rowIframe iframe{width:98%; height:200px}
   }

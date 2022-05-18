@@ -10,8 +10,9 @@ export default function Home() {
   return (
     <div className="container">
       <Helmet>
-        <title>Play</title>
-        <meta name="description" content="" />
+        <title>Play - Ascolta le tue emozioni</title>
+        <meta name="description"
+         content="Ascolta la musica giusta per il tuo stato d'animo gratuitamente. Vivi un esperienza unica... ascolta le tue emozioni! " />
       </Helmet>
 
         <Row className="my-md-5 pt-3">
@@ -26,11 +27,9 @@ export default function Home() {
               Scopri un nuovo modo di ascoltare la musica.
               <br/> Lasciati guidare dalle emozioni per trovare il brano di cui hai bisgno.
               <br/>
-              <Button variant="outline-light" className="btn-outline m-5 my-4" >
-                <Link to="more" spy={true}  smooth={true} offset={-100} duration={500}>
-                <ChevronDoubleDown/> <span className="mx-3">Scopri di più</span> <ChevronDoubleDown/>
-                </Link>
-              </Button>
+              <Link to="more" spy={true}  smooth={true} offset={-100} duration={500} className="btn btn-outline btn-outline-light m-5 my-4" >
+                  <ChevronDoubleDown/> <span className="mx-3">Scopri di più</span> <ChevronDoubleDown/>
+              </Link>
             </p>
           </Col>
           <Col md={6} xs={12}>
@@ -57,10 +56,10 @@ export default function Home() {
         <Container className="text-light text-center my-md-5 pt-md-5">
           <Row className="mt-5 pt-5">
             <Col>
-              <h3 className="display-4 text-capitalize">Dall' Idea al Progetto</h3>
+              <h3 className="display-4 text-capitalize">Scopri di più su di Noi</h3>
               
               <p>Lorem ???</p>
-              <Button variant="outline-light" className="btn-outline my-3" href="/idea">
+              <Button variant="outline-light" className="btn-outline my-3" href="/about">
                 <ChevronDoubleRight/> <span className="mx-3">Scopri di più</span>
               </Button>
             </Col>

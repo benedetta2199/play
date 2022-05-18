@@ -1,5 +1,7 @@
 .divHead{position: absolute !important; right: 0; top:60px; height: 760px; width: 65%;}
 .imgHead{position: absolute; right: 0; top:0px; mix-blend-mode: lighten; height: 760px; pointer-events: none;}
+.consigli{position: relative; top: 30px; width: 38%;}
+.consigli>*{display: block; margin: 5px 0;}
 
 .title{ font-size: 6rem; margin-top: 160px; text-transform: capitalize;}
 
@@ -11,6 +13,7 @@
  .title{ font-size: 3.4rem; margin-top: 5px; width: 100%; text-align: left;}
  .plSpotify{width: 330px !important;}
  .Spotify{text-align: center;}
+ .consigli{width: 98%; margin: auto 1%;}
 }
 
 .player{
@@ -81,12 +84,12 @@
   }
   
   .btnPlayer{position: relative; bottom: 10px;}
-  .btnPlayer *{font-size: 26px; margin: 0 6px;}
+  .btnPlayer svg{font-size: 26px; margin: 0 6px;}
   .btnPlayer button{background: transparent; border: 0;}
 
   .plSpotify{position: relative; z-index: 2; border-radius:12px; margin-bottom: 7px; opacity: .9; width: 350px;}
 
-  .Spotify{margin: 17% 0 10%; padding-top: 3%;}
+  .Spotify{margin: 17% 0 5%; padding-top: 3%;}
   .Spotify p {font-size: 22px;}
   .Spotify i {font-size: 18px; font-style: italic;}
 

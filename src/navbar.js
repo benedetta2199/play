@@ -51,7 +51,7 @@ function NavBar(props) {
                     <Nav.Link href="/tristezza" className={(page=='/tristezza'? 'active ':'') + 'py-0 my-0 px-3'}>Tristezza</Nav.Link>
         </MobileView>
 
-                    <Nav.Link href="/idea" className={(page=='/idea'? 'active':'')}>Progetto</Nav.Link>
+                    <Nav.Link href="/about" className={(page=='/idea'? 'active':'')}>About Us</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

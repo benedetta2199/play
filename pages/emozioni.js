@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import Helmet from 'react-helmet'
-import CardEmotion from './card'
+import CardEmotion from '../src/card'
 
 export default function Home() {
   return (
     <div className="container">
       <Helmet>
           <title>Play - Emozioni</title>
-          <meta name="description" content="" />
+          <meta name="description" content="Scopri tutte le emozioni che puoi ascoltare per vivere un esperienza unica e immersiva" />
       </Helmet>
       <h1 className='text-center'>Le 13 emozioni</h1>
       <p className='text-center'>Servendosi di analisi statistiche, i ricercatori hanno concluso che l'esperienza soggettiva della musica può essere mappata all'interno di 13 emozioni chiave:</p>

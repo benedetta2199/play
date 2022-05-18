@@ -1,10 +1,15 @@
 
 @media only screen and (max-width: 600px) {
-  .glow{transform: scale(.85); margin: 0;}
+  .glow{margin: 0;}
 }
+
+.btPlay{width: 38px; height: 38px; padding: 3.5px 5px !important;}
+.btPlay:hover{background-color: transparent !important; border: solid 2px #fff !important;padding: 2.5px 4px !important;}
+.btPlay svg{width: 30px; height: 30px;}
+
 .card{
-  width:300px;
-  height:200px;
+  width: 250px;
+  height:140px;
   background: #000000; 
   border-top: 1px solid #a8a8a8;
   border-left: 0.5px solid #a8a8a8;
@@ -16,7 +21,7 @@
 }
 .card img{
   position:absolute;
-  bottom:0; right:-30px;
+  bottom:0; right:-20px;
   height:100%;
   mix-blend-mode: lighten;
   pointer-events: none;
@@ -26,8 +31,8 @@
 .glow{
   background: #00000090;
   position:relative;
-  width:302px;
-  height:202px;
+  width:252px;
+  height:142px;
   border-radius: 10px; 
   padding: 1px;
   box-shadow: 0 0 10px #000000;
@@ -35,19 +40,17 @@
   overflow: hidden;
   }
 
-
   .glow::before {
     content: "";
-    width: 365px;
-    height: 365px;
+    width: 310px;
+    height: 310px;
     border-radius: 8px;
     position: absolute;
     z-index: 0;
-    top: -38.5%;
-    left: -9.5%;
+    top: -53.5%;
+    left: -11.5%;
     animation: mymove 6s linear infinite;
     border-radius: 50%;
-  overflow: hidden;
   }
 
   .gAnsia::before{ background-image: linear-gradient(#fc1716, #fc1640 43%, #FE266D);}
@@ -58,6 +61,11 @@
   .gFastidio::before{ background-image: linear-gradient(#ffcf1a, #fff01a 43%, #FAFF07);}
   .gGioia::before{ background-image: linear-gradient(#FAFF07, #e2ff07 43%, #adfc21);}
   .gPassione::before{ background-image: linear-gradient(#adfc21, #58fc21 43%, #44ff41);}
+  .gPaura::before{ background-image: linear-gradient(#44ff41, #29e862 43%, #29f887);}
+  .gSfida::before{ background-image: linear-gradient(#29f887, #29f8c1 43%, #0ff0eb);}
+  .gSogno::before{ background-image: linear-gradient(#0ff0eb, #29cff8 43%, #6554ff);}
+  .gTrionfo::before{ background-image: linear-gradient(#6554ff, #ac54ff 43%, #bb17ff);}
+  .gTristezza::before{ background-image: linear-gradient(#bb17ff, #bc0ec9 43%, #fc1716);}
   
   @keyframes mymove {
     0% {transform: rotate(0deg);}
@@ -65,7 +73,7 @@
     100% {transform: rotate(360deg);}
   }
 
-.card p {font-size: 14px !important; width: 90%; padding-left: 6px; text-align: start;}
+.card p {font-size: 12px !important; width: 65%; padding-left: 6px; text-align: start;font-style: italic;}
 
 .card a {
   position:absolute; 

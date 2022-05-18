@@ -42,13 +42,18 @@ export default function Home() {
         </Dropdown.Toggle>
 
         <Dropdown.Menu variant="dark">
-          <Dropdown.Item href="#/action-1" active>
-            Action
+          <Dropdown.Item>
+            <Link to="21" spy={true} smooth={true} offset={0} duration={500}>Obiettivi comunicativi</Link>
           </Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
+          <Dropdown.Item>
+            <Link to="22" spy={true} smooth={true} offset={0} duration={500}>Target</Link>
+          </Dropdown.Item>
+          <Dropdown.Item>
+            <Link to="23" spy={true} smooth={true} offset={0} duration={500}>Promozione</Link>
+          </Dropdown.Item>
+          <Dropdown.Item>
+            <Link to="24" spy={true} smooth={true} offset={0} duration={500}>Valutazione dei risultati</Link>
+          </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       </div>
@@ -89,7 +94,7 @@ export default function Home() {
             <h4 className='text-center h3 mt-1'>Competitor</h4>
             <div className='text-center'>
               <p className='m-0'>Di seguito illustrerò i competitor e gli aspetti che ho individuato da tenere e valorizzare "Pro" e invece quelli da migliorare o eliminare "Contro":</p>
-              <a href='https://www.ocf.berkeley.edu/~acowen/music.html#modal' className='text-center text-light h5'>  Mappa audio interattiva</a>
+              <a href='https://www.ocf.berkeley.edu/~acowen/music.html#modal' className='text-center text-light h5' target="_blank">  Mappa audio interattiva</a>
               <p className='mb-0'>Nonostante non sia espressamente un sito, era doveroso citare come primo competitor il servizio che ha fornito l'idea al questo, il target e le finalità sono diverse, in quanto è utilizzato per offrire un panoramica e i dati della ricerca, rimane la identica la suddivisione musicale.
               </p>
               <Row className="mb-2">
@@ -111,17 +116,23 @@ export default function Home() {
                 </Col>
               </Row>
 
-              <a href='#' className='text-center text-light h5'>Sito Web XXX</a>
-              <p className='mb-0'>xx
+              <a href='https://open.spotify.com/genre/mood-playlists[1]' className='text-center text-light h5' target="_blank">Spotify Mood</a>
+              <p className='mb-0'>Essendo Spotify una delle piattaforme per lo streaming musicale più diffuse, ho deciso di analizzarlo come secondo competitor.
+              In particolare prendendo in considerazione la sezione Mood, più simile come target e finalità a quella del sito che desidero creare: 
               </p>
               <Row>
                 <Col xs={6} className='d-flex flex-column text-center'>
                   <strong>Pro</strong>
-                  <small>Associazione di un colore e una lettera ad ogni genere</small>
+                  <small>Ha molte tipologie di playlist, tutte diversificate</small>
+                  <small>C'è una descrizione per rendere più chiara la tipologia della playlist</small>
+                  <small>Interazioni semplici e intuitive</small>
+                  <small>Stile minimal, con colori brillanti e vivaci su una base neutra</small>
                 </Col>
                 <Col xs={6} className='d-flex flex-column text-center'>
                   <strong>Contro</strong>
-                  <small>La mancanza di titolo e autore nei brani</small>
+                  <small>Non si ha una visione globale di tutte le playlist</small>
+                  <small>Non si possono dare pareri sulle playlist</small>
+                  <small>Skip limitati e pubblicità nella versione gratuita</small>
                 </Col>
               </Row>
             </div>
@@ -224,6 +235,36 @@ export default function Home() {
       
       <section>
         <h2 className='text-center display-4 mt-4 pt-md-4'>Communication Strategy</h2> 
+        <h3 className='text-center display-6 mt-2' id="21">Obiettivi comunicativi</h3>
+        <Row className="d-flex flex-column align-items-center">
+          <Col md={9}>
+            <p>
+              Il sito non avendo uno scopo divulgativo non presenta un particolare story telling, quindi può essere visualizzato da una qualunque sezione senza rovinare l'esperienza utente, inquanto ogni parte è indipendente dalle altre. Il sito si pone come obiettivo quello di offrire uno streaming musicale diverso dal solito, permettendo così all'utente di conosce brani che normalmente non ascolterebbe (promuovendo la conoscenza musicale) e provando a migliorare l'umore dell'utente grazie all'influsso che la musica ha sul nostro cervello.
+            </p>
+            <p>
+              Per distinguermi dai competitor e fidelizzare l'utente ho deciso di dare particolare importanza a tutti quegli aspetti che attirano l'attenzione dell'utente: gli elementi grafici, colori contrastati e brillanti, elementi di gamification (come la tastiera del pianoforte dell'home page che oltre a essere un menù di navigazione, permette di suonare i semitoni). Per render intuitiva l'interazione con questi elementi ho scelto una resa grafica che assomigliasse a degli oggetti di uso comune, per migliorare l'affordance, ovvero la qualità che permette all'utente di riuscire a comprenderne il funzionamento. Sicuramente un limite riscontrato è stato quello del limitato numero di brani musicali (per il copiright), risolvibile ampliando in futuro il catalogo (magari collaborando anche con nuovi artisti poco conosciuti)
+            </p>
+          </Col>
+        </Row>
+        
+        <h3 className='text-center display-6 mt-2' id='22'>Target</h3>
+        <Row className="d-flex flex-column align-items-center">
+          <Col md={9}>
+            <p>Il target preso in considerazione è quello dei ragazzi (15-25 anni) italiani (inquanto il sito è disponibile in questa lingua), abituati a servizi simili e sempre curiosi di provare esperienze nuove. Ma, essendo la struttura del sito intuitiva e accattivante, si adatta bene a un target utente più 
+            </p>
+          </Col>
+        </Row>
+        
+        <h3 className='text-center display-6 mt-2' id="23">Promozione</h3>
+        <Row className="d-flex flex-column align-items-center">
+          <Col md={9}>
+            <p>Intendo promuovere il sito prevalentemente online, tramite social (Instagram essendo il social più utilizzato dal target scelto) e tramite passaparola.
+            </p>
+          </Col>
+        </Row>
+        
+        <h3 className='text-center display-6 mt-2' id="24">Valutazione dei risultati</h3>
+
       </section>
       </Container>
     </main>
