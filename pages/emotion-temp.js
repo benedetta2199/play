@@ -12,14 +12,33 @@ import emailjs from 'emailjs-com'
 
 export default function Emotion(props) {
 
+  /*var tracks=[];
+  switch(titolo){
+    case "ansia":tracks=[useSound('./music/'+name+'/1.mp3'),useSound('./music/'+name+'/2.mp3'),useSound('./music/'+name+'/3.mp3')]; break;
+    case "bellezza":tracks=[useSound('./music/'+name+'/1.mp3'),useSound('./music/'+name+'/2.mp3'),useSound('./music/'+name+'/3.mp3')]break;
+    case "calma":tracks=[useSound('./music/'+name+'/1.mp3'),useSound('./music/'+name+'/2.mp3'),useSound('./music/'+name+'/3.mp3')] break;
+    case "divertimento":tracks=[useSound('./music/'+name+'/1.mp3'),useSound('./music/'+name+'/2.mp3'),useSound('./music/'+name+'/3.mp3')]break;        
+    case "energia":tracks=[useSound('./music/'+name+'/1.mp3'),useSound('./music/'+name+'/2.mp3'),useSound('./music/'+name+'/3.mp3')]break;    
+    case "fastidio":tracks=[useSound('./music/'+name+'/1.mp3'),useSound('./music/'+name+'/2.mp3'),useSound('./music/'+name+'/3.mp3')]break;
+    case "gioia":tracks=[useSound('./music/'+name+'/1.mp3'),useSound('./music/'+name+'/2.mp3'),useSound('./music/'+name+'/3.mp3')]break;
+    case "passione":break;
+    case "paura":break;
+    case "sfida":break;
+    case "sogno": break;
+    case "trionfo":break;
+    case "tristezza": break;
+  }*/
+
   const {title, linkImg, st, color, card, cit, Acit, idSpotify, t, a, trak, img, n} = props;
   var inputTitle;
 
   const controls = useAnimation();
-
+  const traks = [];
+  for(var i=0; i<n; i++){
+    traks.push(useSound('./music/'+title+'/'+(i+1)+'.mp3'))
+  }
   const titles=t;
   const artists=a;
-  const tracks=trak;
   const imgs=img;
   const Variants = {
       stop: {rotate: 0},
