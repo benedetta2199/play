@@ -35,7 +35,8 @@ export default function Emotion(props) {
   const controls = useAnimation();
   const traks = [];
   for(var i=0; i<n; i++){
-    traks.push(useSound('./music/'+title+'/'+(i+1)+'.mp3'))
+    traks.push(useSound('./music/'+title+'/'+(i+1)+'.mp3'));
+    console.log(i);
   }
   const titles=t;
   const artists=a;
