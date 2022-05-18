@@ -61,7 +61,8 @@ export default function Emotion(props) {
               <Col xs={5}>
                 <div className={style.shadow}>
                   <motion.div className={style.disc} animate={controls} variants={Variants}>
-                    <img src='/logo.png' alt=''/>
+                    {/*imgs && imgs[cont]} alt={"immagine profilo di " + artists[cont]}*/}
+                    <img src='/logo.png'/>
                   </motion.div>
                 </div>
               </Col>
@@ -96,12 +97,12 @@ export default function Emotion(props) {
           </form>
         </section>
         
-        <section className={style.Spotify + ' text-center'}>
+        {/*<section className={style.Spotify + ' text-center'}>
           <h2>Ascolta anche:</h2>
           <div className="d-flex flex-wrap justify-content-around">
             {card && card.map (element => <CardEmotion titolo={element} key={element}/>)}
           </div>
-        </section>
+        </section>*/}
 
         <section>
             <Row className='mb-5 pb-3 text-center'>
