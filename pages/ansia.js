@@ -1,5 +1,6 @@
 import Helmet from 'react-helmet';
 import useSound from 'use-sound';
+import Player from '../src/player';
 import Emotion from './emotion-temp';
 export default function Home() {
 
@@ -22,17 +23,12 @@ export default function Home() {
       <Emotion 
       title={name}
       linkImg="https://www.freepik.com/free-photo/young-handsome-serious-sad-hipster-man-listening-music-with-headphones-with-neon-lights_12698932.htm"
-      player={<></>}
+      player={<Player title={name} t={titles} a={artists} img={imgs}/>}
       st="btn_an" color="cAnsia"
       card={["calma","fastidio","paura"]}
       cit="Eccola lì, l’ansia che prova a sedurre la tranquillità con una bellissima paura." 
       Acit="Fabrizio Caramagna"
-      idSpotify="1BC4mwJaw0nlQszRvrocIk"
-      t={titles}
-      a={artists}
-      trak={tracks}
-      img={imgs}
-      n={3}/>
+      idSpotify="1BC4mwJaw0nlQszRvrocIk"/>
     </>
   )
 }
