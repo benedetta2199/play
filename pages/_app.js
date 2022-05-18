@@ -29,7 +29,6 @@ function MyApp({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <meta name='robots' content="index, follow"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="google-site-verification" content="Age-4Zf5RuFXudc1D7p8DTuTJaio5yAxwNeSRS42nXM" />
       </Helmet>
       <Head>
         <link rel="icon" href="/logo.png" />
