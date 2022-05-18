@@ -15,62 +15,63 @@ export default function Emotion(props) {
   const {title, linkImg, st, color, card, cit, Acit, idSpotify, t, a, trak, img, n} = props;
 
   var tracks=[];
-    switch(title){
-      case "ansia":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')]; break;
-      case "bellezza":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')];break;
-      case "calma":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')]; break;
-      case "divertimento":tracks=[useSound('./music/'+title+'/1.mp3')];break;        
-      case "energia":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3')];break;    
-      case "fastidio":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3')];break;
-      case "gioia":tracks=[useSound('./music/'+title+'/1.mp3')];break;
-      case "passione":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3'),useSound('./music/'+title+'/4.mp3')];break;
-      case "paura":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')];break;
-      case "sfida":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')];break;
-      case "sogno":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')];break;
-      case "trionfo":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3')];break;
-      case "tristezza":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3')];break;
-      default: tracks=[]; console.log("ATTENZIONE:"+title);break;
+    if(title){
+      switch(title){
+        case "ansia":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')]; break;
+        case "bellezza":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')];break;
+        case "calma":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')]; break;
+        case "divertimento":tracks=[useSound('./music/'+title+'/1.mp3')];break;        
+        case "energia":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3')];break;    
+        case "fastidio":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3')];break;
+        case "gioia":tracks=[useSound('./music/'+title+'/1.mp3')];break;
+        case "passione":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3'),useSound('./music/'+title+'/4.mp3')];break;
+        case "paura":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')];break;
+        case "sfida":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')];break;
+        case "sogno":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')];break;
+        case "trionfo":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3')];break;
+        case "tristezza":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3')];break;
+        default: tracks=[]; console.log("ATTENZIONE:"+title);break;
+      }
+  
+      console.log(title + " - " + tracks.length);
+  
+    const controls = useAnimation();
+    /*const tracks = trak;
+    const track = new Array(n);
+    for(var i=0; i<n; i++){
+      track.push(useSound('./music/'+title+'/'+(i+1)+'.mp3'));
+      console.log(i+1);
+    }*/
+    const titles=t;
+    const artists=a;
+    const imgs=img;
+    const Variants = {
+        stop: {rotate: 0},
+        start: {rotate: 360,transition: { duration: 6, repeat: Infinity, ease: "linear" }}
+      };
+      
+      const [isStart, setIsStart] = useState(false);
+      const lenght = tracks.length;
+      
+      const [cont, setCont] = useState(0);  
+      
+      const [play, {stop,pause}] = tracks && tracks[cont];  
+  
+      const [char, setButton] = useState(<PlayFill/>);
+  
+      function sendEmail(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_qh75kq8', 'template_91ffk65', e.target, 'user_PQfmzyWoDL9kp4BkhLqDZ')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+        inputTitle.value=""
+      }
     }
-
-    console.log(title + " - " + tracks.length);
-
-  const controls = useAnimation();
-  /*const tracks = trak;
-  const track = new Array(n);
-  for(var i=0; i<n; i++){
-    track.push(useSound('./music/'+title+'/'+(i+1)+'.mp3'));
-    console.log(i+1);
-  }*/
-  const titles=t;
-  const artists=a;
-  const imgs=img;
-  const Variants = {
-      stop: {rotate: 0},
-      start: {rotate: 360,transition: { duration: 6, repeat: Infinity, ease: "linear" }}
-    };
     
-    const [isStart, setIsStart] = useState(false);
-    const lenght = tracks.length;
-    
-    const [cont, setCont] = useState(0);  
-    
-    const [play, {stop,pause}] = tracks && tracks[cont];  
-
-    const [char, setButton] = useState(<PlayFill/>);
-
-    function sendEmail(e) {
-      e.preventDefault();
-      emailjs.sendForm('service_qh75kq8', 'template_91ffk65', e.target, 'user_PQfmzyWoDL9kp4BkhLqDZ')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-      inputTitle.value=""
-    }
-    
-  return (
-    <div classtitle="container">
+    const x = tile ? (<div classtitle="container">
 
       <div classtitle={style.divHead + " imgCredit"}>
         <img src={"./emotion/"+title+".jpg"} classtitle={style.imgHead} alt=""/>
@@ -142,6 +143,7 @@ export default function Emotion(props) {
                 </Col>
             </Row>
         </section>
-  </div>
-  )
+  </div>) : (<></>)
+    
+  return ( x )
 }
