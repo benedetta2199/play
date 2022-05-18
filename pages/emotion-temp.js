@@ -51,7 +51,7 @@ export default function Emotion(props) {
     
     const [cont, setCont] = useState(0);  
     
-  console.log(traks);
+  console.log("AA"+traks);
     const [play, {stop,pause}] = traks ? traks[cont] : useSound('./music/'+titles[cont]+'/1.mp3');  
 
     const [char, setButton] = useState(<PlayFill/>);
