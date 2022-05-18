@@ -67,7 +67,7 @@ export default function Emotion(props) {
               </Col>
               <Col xs={7}>
                 <h2 className="h4 mt-md-3 mt-4 mx-2">{titles && titles[cont]}</h2>
-                <p className="mx-4">{srtists && artists[cont]}</p>
+                <p className="mx-4">{artists && artists[cont]}</p>
                 <div className={style.btnPlayer + ' d-flex w-100 justify-content-center'}>
                   <SkipBackwardFill onClick={()=>{setCont((cont+lenght-1)%lenght); stop(); setIsStart(false); controls.start("stop"); setButton(<PlayFill/>)}}/>
                   <a className='m-0 p-0'
