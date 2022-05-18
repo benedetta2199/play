@@ -32,7 +32,7 @@ export default function Emotion(props) {
     
     const [cont, setCont] = useState(0);  
     
-    const [play, {stop,pause}] = track && track[cont];  
+    const [play, {stop,pause}] = trak && trak[cont];  
 
     const [char, setButton] = useState(<PlayFill/>);
 
