@@ -13,6 +13,9 @@ import emailjs from 'emailjs-com'
 export default function Emotion(props) {
 
   const {title, linkImg, st, color, card, cit, Acit, idSpotify, t, a, trak, img, n} = props;
+  console.log(title);
+
+
   var tracks=[];
     switch(title){
       case "ansia":tracks=[useSound('./music/'+title+'/1.mp3'),useSound('./music/'+title+'/2.mp3'),useSound('./music/'+title+'/3.mp3')]; break;
