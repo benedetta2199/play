@@ -8,8 +8,8 @@
   
   module.exports = {
       assetPrefix: './', 
-      reactStrictMode: true,
+      /*reactStrictMode: true,
       env:{
           GOOGLE_ANALYTICS_ID:'G-B4LSMB3HNB'
-      }
+      }*/
     }
