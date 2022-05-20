@@ -8,6 +8,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import Footer from '../src/footer';
 import Helmet from 'react-helmet';
 import Script from 'next/script';
+import {useEffect} from 'react';
+import{useRouter} from 'next/router'
+import * as ga from '../lib/google-analytics'
 
 function MyApp({ Component, pageProps }) {
   /*const router = useRouter()
@@ -23,20 +26,27 @@ function MyApp({ Component, pageProps }) {
 
   const router = useRouter();
 
-  const NEXT_PUBLIC_GOOGLE_ANALYTICS= 'G-B4LSMB3HNB';
+  seEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
   
   return (
     <>
-      <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-B4LSMB3HNB" />
 
-      <Script strategy="lazyOnload">
+      <Script strategy="afterInteractive" id="google-analytics-script">
           {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-              page_path: window.location.pathname,
-              });
+               window.dataLayer = window.dataLayer || [];
+               function gtag(){dataLayer.push(arguments);}
+               gtag('js', new Date());
+             
+               gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}');
           `}
       </Script>
 
