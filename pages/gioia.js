@@ -9,7 +9,7 @@ export default function Home() {
   const titles=['Lappland'];
   const artists=['Scandinavianz'];
   const tracks=[useSound('./music/'+name+'/1.mp3')];
-  const imgs=["./music/"+name+"/1.png"];
+  const imgs=["./music/"+name+"/1.webp"];
 
   return (
     <>

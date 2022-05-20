@@ -9,7 +9,7 @@ export default function Home() {
   const titles=['Firestorm', 'One Shot'];
   const artists=['Abbynoise', 'Soundroll'];
   const tracks=[useSound('./music/'+name+'/1.mp3'),useSound('./music/'+name+'/2.mp3'),useSound('./music/'+name+'/3.mp3')];
-  const imgs=["./music/"+name+"/1.jpg","./music/"+name+"/2.jpg","./music/"+name+"/3.jpg"];
+  const imgs=["./music/"+name+"/1.webp","./music/"+name+"/2.webp","./music/"+name+"/3.webp"];
 
   return (
     <>

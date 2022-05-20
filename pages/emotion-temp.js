@@ -32,7 +32,7 @@ export default function Emotion(props) {
   return ( 
     <div className="container">
     <div className={style.divHead + " imgCredit"}>
-      <img src={"./emotion/" + title + ".jpg"} className={style.imgHead} alt="" />
+      <img src={"./emotion/" + title + ".webp"} className={style.imgHead} alt="" />
       <a href={linkImg} className={color + " credit"} target="_blank">created by master1305 - www.freepik.com</a>
     </div>
     <section className={style.sectionOne}>

@@ -9,7 +9,7 @@ export default function Home() {
   const titles=['Filaments', 'Amaranth'];
   const artists=['Scott Buckley', 'Enzalla'];
   const tracks=[useSound('./music/'+name+'/1.mp3'),useSound('./music/'+name+'/2.mp3')];
-  const imgs=["./music/"+name+"/1.jpg","./music/"+name+"/2.jpg"];
+  const imgs=["./music/"+name+"/1.webp","./music/"+name+"/2.webp"];
 
   return (
     <>

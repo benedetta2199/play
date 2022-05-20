@@ -7,6 +7,7 @@ import NavBar from '../src/navbar';
 import "bootstrap/dist/css/bootstrap.css";
 import Footer from '../src/footer';
 import Helmet from 'react-helmet';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
   /*const router = useRouter()
@@ -21,9 +22,24 @@ function MyApp({ Component, pageProps }) {
   }, [router.events])*/
 
   const router = useRouter();
+
+  const NEXT_PUBLIC_GOOGLE_ANALYTICS= 'G-B4LSMB3HNB';
   
   return (
     <>
+      <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+
+      <Script strategy="lazyOnload">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+              });
+          `}
+      </Script>
+
       <Helmet htmlAttributes={{lang:"it"}}>
         <html lang={"it" }/>  
         <meta charSet="utf-8" />
