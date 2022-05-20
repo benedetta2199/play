@@ -8,8 +8,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import Footer from '../src/footer';
 import Helmet from 'react-helmet';
 import Script from 'next/script';
-import {useEffect} from 'react';
-import{useRouter} from 'next/router'
 import * as ga from '../lib/google-analytics'
 
 function MyApp({ Component, pageProps }) {
@@ -26,7 +24,7 @@ function MyApp({ Component, pageProps }) {
 
   const router = useRouter();
 
-  seEffect(() => {
+  useEffect(() => {
     const handleRouteChange = (url) => {
       ga.pageview(url)
     }
