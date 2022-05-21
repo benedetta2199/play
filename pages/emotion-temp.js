@@ -65,7 +65,7 @@ export default function Emotion(props) {
         </Row>
         <Row id="more">
           <Col md={6} className='d-flex align-items-center'>
-            <h2 className='display-2 px-4'>Ascolta le tue emozioni anche su Spotify</h2>
+            <h2 className='display-2 px-4 w-100 text-md-start text-center mb-2'>Ascolta le tue emozioni anche su Spotify</h2>
           </Col>
           <Col md={6} className="text-center">
             <iframe className={style.plSpotify} src={"https://open.spotify.com/embed/playlist/" + idSpotify + "?utm_source=generator"}
