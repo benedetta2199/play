@@ -7,7 +7,7 @@ function Footer() {
     return( 
         <footer>
             <Container>
-            <Row className='pt-5'>
+            <Row className='pt-5 overflow-auto'>
                 <Col md={2} xs={12}>
                     <div className="d-flex align-items-center">
                     <img src="/logo.png" className='mx-2' alt=""/>
