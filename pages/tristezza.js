@@ -1,6 +1,7 @@
 import useSound from 'use-sound';
 import Emotion from './emotion-temp';
 import Helmet from 'react-helmet';
+import Player from '../src/player';
 
 export default function Home() {
 
@@ -26,11 +27,7 @@ export default function Home() {
     cit="La tristezza viene dalla solitudine del cuore." 
     Acit="Montesquieu"
     idSpotify="6CWmwdX4XPWexAs8D8HmhJ"
-    t={titles}
-    a={artists}
-    trak={tracks}
-    img={imgs}
-    n={2}/>
+    player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }

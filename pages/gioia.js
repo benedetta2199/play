@@ -1,6 +1,7 @@
 import useSound from 'use-sound';
 import Emotion from './emotion-temp';
 import Helmet from 'react-helmet';
+import Player from '../src/player';
 
 export default function Home() {
 
@@ -26,11 +27,7 @@ export default function Home() {
     cit="A volte la tua gioia è la fonte del tuo sorriso, ma spesso il tuo sorriso può essere la fonte della tua gioia." 
     Acit="Thich Nhat Hanh"
     idSpotify="1ffzRcU3CQm7cbJ5AQcxvB"
-    t={titles}
-    a={artists}
-    trak={tracks}
-    img={imgs}
-    n={1}/>
+    player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }

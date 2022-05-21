@@ -1,6 +1,7 @@
 import useSound from 'use-sound';
 import Emotion from './emotion-temp';
 import Helmet from 'react-helmet';
+import Player from '../src/player';
 
 export default function Home() {
 
@@ -22,17 +23,12 @@ export default function Home() {
     <Emotion 
     title={name}
     linkImg="https://www.freepik.com/free-photo/smiling-caucasian-young-man-s-portrait-handsome-male-model-casual-style_15560194.htm"
-    player={<></>}
     st="btn_tri" color="cTrionfo"
     card={["sfida","energia"]}
     cit="Il coraggio, che è il nostro sesto senso, ci fa scoprire la strada più breve per il trionfo." 
     Acit="Khalil Gibran"
     idSpotify="5ecBzpbT8P9hTphGuTo8MV"
-    t={titles}
-    a={artists}
-    trak={tracks}
-    img={imgs}
-    n={2}/>
+    player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }

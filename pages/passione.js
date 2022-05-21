@@ -1,6 +1,7 @@
 import useSound from 'use-sound';
 import Emotion from './emotion-temp';
 import Helmet from 'react-helmet';
+import Player from '../src/player';
 
 export default function Home() {
 
@@ -27,11 +28,7 @@ export default function Home() {
       cit="Non si può descrivere la passione, la si può solo vivere." 
       Acit="Enzo Ferrari"
       idSpotify="0xh1BfER9DtyngwW4yoIui"
-      t={titles}
-      a={artists}
-      trak={tracks}
-      img={imgs}
-      n={4}/>
+      player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }

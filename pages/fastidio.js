@@ -1,6 +1,7 @@
 import useSound from 'use-sound';
 import Emotion from './emotion-temp';
 import Helmet from 'react-helmet';
+import Player from '../src/player';
 
 export default function Home() {
 
@@ -27,11 +28,7 @@ export default function Home() {
       cit="Un’avventura è soltanto un fastidio considerato nel modo giusto. Un fastidio un’avventura considerata nel modo sbagliato."
       Acit="GK Chesterton"
       idSpotify="7B1dNUa98X1zBrStNHeKFD"
-      t={titles}
-      a={artists}
-      trak={tracks}
-      img={imgs}
-      n={2}/>
+      player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }

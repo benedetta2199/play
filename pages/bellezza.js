@@ -1,5 +1,6 @@
 import Helmet from 'react-helmet';
 import useSound from 'use-sound';
+import Player from '../src/player';
 import Emotion from './emotion-temp';
 
 export default function Home() {
@@ -27,11 +28,7 @@ export default function Home() {
       cit="La bellezza risplende nel cuore di colui che ad essa aspira più che negli occhi di colui che la vede." 
       Acit="Khalil Gibran"
       idSpotify="1tw3fSQdDI2cVsSTRaNWyY"
-      t={titles}
-      a={artists}
-      trak={tracks}
-      img={imgs}
-      n={3}/>
+      player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }

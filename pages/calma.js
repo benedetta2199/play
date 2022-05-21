@@ -1,5 +1,6 @@
 import Helmet from 'react-helmet';
 import useSound from 'use-sound';
+import Player from '../src/player';
 import Emotion from './emotion-temp';
 
 export default function Home() {
@@ -27,11 +28,7 @@ export default function Home() {
       cit="Procedi con calma tra il frastuono e la fretta, e ricorda quale pace possa esservi nel silenzio." 
       Acit="Anonimo"
       idSpotify="1SFp8Q4Vltls4fsncw0XEh"
-      t={titles}
-      a={artists}
-      trak={tracks}
-      img={imgs}
-      n={3}/>
+      player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }

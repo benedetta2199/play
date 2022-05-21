@@ -1,6 +1,7 @@
 import useSound from 'use-sound';
 import Emotion from './emotion-temp';
 import Helmet from 'react-helmet';
+import Player from '../src/player';
 
 export default function Home() {
 
@@ -27,11 +28,7 @@ export default function Home() {
     cit="Il mondo appartiene a quelli che hanno la maggiore energia." 
     Acit="Visconte Alexis de Tocqueville"
     idSpotify="6MJnS1xfiytzSZxbjwh4Xr"
-    t={titles}
-    a={artists}
-    trak={tracks}
-    img={imgs}
-    n={2}/>
+    player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }

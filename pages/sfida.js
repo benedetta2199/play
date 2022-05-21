@@ -1,6 +1,7 @@
 import useSound from 'use-sound';
 import Emotion from './emotion-temp';
 import Helmet from 'react-helmet';
+import Player from '../src/player';
 
 export default function Home() {
 
@@ -27,11 +28,7 @@ export default function Home() {
     cit="Le sfide nella vita ti aiutano a scoprire chi sei." 
     Acit="Bernice Johnson Reagon"
     idSpotify="1MKjci92viwng4XLceBO2J"
-    t={titles}
-    a={artists}
-    trak={tracks}
-    img={imgs}
-    n={3}/>
+    player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }

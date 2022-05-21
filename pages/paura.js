@@ -1,6 +1,7 @@
 import useSound from 'use-sound';
 import Emotion from './emotion-temp';
 import Helmet from 'react-helmet';
+import Player from '../src/player';
 
 export default function Home() {
 
@@ -27,11 +28,7 @@ export default function Home() {
     cit="Chi ha paura muore ogni giorno, chi non ha paura muore una volta sola." 
     Acit="Paolo Borsellino"
     idSpotify="0t3mB8VSp3BKf7dn37mo64"
-    t={titles}
-    a={artists}
-    trak={tracks}
-    img={imgs}
-    n={3}/>
+    player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }

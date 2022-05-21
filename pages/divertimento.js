@@ -1,5 +1,6 @@
 import Helmet from 'react-helmet';
 import useSound from 'use-sound';
+import Player from '../src/player';
 import Emotion from './emotion-temp';
 
 export default function Home() {
@@ -21,17 +22,12 @@ export default function Home() {
     <Emotion 
     title={name}
     linkImg="https://www.freepik.com/free-photo/calm-happy-caucasian-man-s-portrait-gradient-studio-background-neon-light-beautiful-male-model-with-hipster-style-earphones-concept-human-emotions-facial-expression-sales-ad_13342806.htm"
-    player={<></>}
     st="btn_dv"  color="cDivertimento"
     card={["gioia","energia"]}
     cit="Io penso che il divertimento sia una cosa seria." 
     Acit="Italo Calvino"
     idSpotify="0nWrSLh5YGnYTqCWT2BY4S"
-    t={titles}
-    a={artists}
-    trak={tracks}
-    img={imgs}
-    n={1}/>
+    player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }

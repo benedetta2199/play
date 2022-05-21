@@ -1,6 +1,7 @@
 import useSound from 'use-sound';
 import Emotion from './emotion-temp';
 import Helmet from 'react-helmet';
+import Player from '../src/player';
 
 export default function Home() {
 
@@ -22,17 +23,12 @@ export default function Home() {
     <Emotion 
     title={name}
     linkImg="https://www.freepik.com/free-photo/caucasian-woman-s-portrait-isolated-blue-background-multicolored-neon-light_13636129.htm"
-    player={<></>}
     st="btn_sg" color="cSogno"
     card={["bellezza","calma","passione"]}
     cit="Se puoi sognarlo, puoi farlo!" 
     Acit="Walt Disney"
     idSpotify="06JKENbVcsDWzBNocudtcd"
-    t={titles}
-    a={artists}
-    trak={tracks}
-    img={imgs}
-    n={3}/>
+    player={<Player title={name} t={titles} a={artists} img={imgs}/>}/>
     </>
   )
 }
