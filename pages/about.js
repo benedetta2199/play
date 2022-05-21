@@ -23,7 +23,7 @@ export default function Home() {
 
           <Row className={style.rowIframe + ' d-flex align-items-center text-center py-4'}>
             <Col md={6}>
-              <iframe src="https://www.youtube.com/embed/IIiDBVW1Kv0?start=192" title="YouTube 'Lo squalo' clip" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
+              <iframe src="https://www.youtube.com/embed/IIiDBVW1Kv0?start=192" title="YouTube 'Lo squalo' clip" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
             </Col>
             <Col md={6}>
               <p className={style.text+' text-center'}>
@@ -37,7 +37,7 @@ export default function Home() {
               </p>
             </Col>
             <Col md={6}>
-              <iframe src="https://www.youtube.com/embed/wasutmoo0cA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
+              <iframe src="https://www.youtube.com/embed/wasutmoo0cA" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
             </Col>
           </Row> 
 
