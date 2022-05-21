@@ -25,7 +25,7 @@ function Footer() {
                     </div>
                 </Col>
                 <Col md={10} xs={12} className='d-flex justify-content-end px-0 mx-0'>
-                    <Row className='w-100 text-end text-light'>
+                    <Row className='w-100 text-end text-light mx-0 px-0'>
                         <Col md={6} xs={1}></Col>
                         <Col md={2} xs={3}><Nav.Link href='/' className='text-light text-decoration-none'>Home</Nav.Link></Col>
                         <Col md={2} xs={4} className="px-0">
