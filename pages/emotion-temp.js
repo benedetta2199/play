@@ -45,8 +45,8 @@ export default function Emotion(props) {
 
         <form onSubmit={sendEmail} class={style.consigli + ' d-flex flex-column'}>
           <label for="message">Consigliaci altri brani:</label>
-          <input type="hidden" title="title" id="title" value={title} />
-          <input type="text" title="message" id="message" class="text-dark" ref={e => inputTitle = e} />
+          <input type="hidden" id="name" name="name" value={title} />
+          <input type="text" id="message" name="message" class="text-dark" ref={e => inputTitle = e} />
           <div className='text-md-end text-center'>
             <input type="submit" value="Invia" className={st + ' btn btn-sm border-light btn-outline text-light'} />
           </div>
