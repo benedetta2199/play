@@ -47,7 +47,7 @@ export default function Home() {
               <Piano/>
               <p>Suona lo stato d'animo che stai provando o che vuoi provare per scoprire i brani che possono suscitarlo</p>
               <Button variant="outline-light" className="btn-outline my-3" href="/emozioni">
-                <ChevronDoubleRight/> <span className="mx-3">Scopri di più</span>
+                <ChevronDoubleRight/> <span className="mx-3">Vedi tutte le emozioni</span>
               </Button>
             </Col>
           </Row>     
@@ -56,11 +56,13 @@ export default function Home() {
         <Container className="text-light text-center my-md-5 pt-md-5">
           <Row className="mt-5 pt-5">
             <Col>
-              <h3 className="display-4 text-capitalize">Scopri di più su di Noi</h3>
+              <h3 className="display-4 text-capitalize">Sei curioso?</h3>
               
-              <p>Lorem ???</p>
+              <p>Vuoi sapere da cosa è nata l'idea ed il progetto? Perchè ascoltare musica in base allo stato d'animo provato? 
+                <br/>Le basi scientifiche e i benefici di tutto ciò? Puoi trovare tutto questo e anche di più nella sezione About us.
+              </p>
               <Button variant="outline-light" className="btn-outline my-3" href="/about">
-                <ChevronDoubleRight/> <span className="mx-3">Scopri di più</span>
+                <ChevronDoubleRight/> <span className="mx-3">Leggi</span>
               </Button>
             </Col>
           </Row>     

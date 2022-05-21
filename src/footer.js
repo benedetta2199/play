@@ -15,10 +15,10 @@ function Footer() {
                     </div>
                     <div>
                     <ul className={style.social + " d-flex"}>
-                        <li><a href="https://open.spotify.com/user/31wewhnfbjvgb4agzwv3smf2isve?si=svnygb10RLmvORRjWiCRGg&utm_source=copy-link" className={style.sp}>
+                        <li><a href="https://open.spotify.com/user/31wewhnfbjvgb4agzwv3smf2isve?si=svnygb10RLmvORRjWiCRGg&utm_source=copy-link" target="_blank" className={style.sp}>
                         <span className='d-none'>Pagina Spotify</span><Spotify/>
                         </a></li>
-                        <li><a href="https://instagram.com/play.experiences" className={style.ig}>
+                        <li><a href="https://instagram.com/play.experiences" target="_blank" className={style.ig}>
                             <span className='d-none'>Pagina Instgram</span><Instagram/>
                         </a></li>
                     </ul>

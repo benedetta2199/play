@@ -53,10 +53,8 @@ export default function Home() {
             <Col xs={12}> <Disk/> </Col>
           </Row>      
         </Container>
-        {/*Ad esempio, si sa che gli intervalli tra le note sono responsabili di reazioni abbastanza riproducibili tra individui diversi: le composizioni per semitoni generano tensione (“Lo squalo”, appunto) mentre un intervallo di quinta (DO-SOL) è così perfetto e piacevole da risultare l'equivalente musicale di un cerchio nelle arti figurative. Gli strumenti che si usano sono un altro esempio molto semplice da comprendere: qualcuno alzi la mano se è capace di suscitare terrore suonando un'arpa o un oboe! Ci si può riuscire, certamente, ma se in un film o in un videogame dobbiamo evocare una sensazione di paura e angoscia, meglio andare su sintetizzatori, cori lirici, viole lancinanti, contrabbassi potenti e via dicendo... Insomma, sbizzarriamoci a elencare tutte le differenze tra questo video, con le colonne sonore dei più famosi film horror, e questo, con le colonne sonore dei film romantici. Le differenze sono evidenti anche a chi non ha nemmeno la passione per la musica.*/
-/* */}
-
-        <Container className="text-light text-center my-md-5 pt-md-5">
+        
+        {/*<Container className="text-light text-center my-md-5 pt-md-5">
           <Row className="mt-md-5 pt-md-5">
             <Col>
               <h3 className="display-4 text-capitalize">Cervello e musica</h3>
@@ -67,7 +65,7 @@ export default function Home() {
               </Button>
             </Col>
           </Row>     
-        </Container>
+        </Container>*/}
     </div>
   )
 }
