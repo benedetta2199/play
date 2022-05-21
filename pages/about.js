@@ -53,18 +53,20 @@ export default function Home() {
           </Row>      
         </Container>
         
-        {/*<Container className="text-light text-center my-md-5 pt-md-5">
+        <Container className="text-light text-center my-md-5 pt-md-5">
           <Row className="mt-md-5 pt-md-5">
             <Col>
-              <h3 className="display-4 text-capitalize">Cervello e musica</h3>
+              <h3 className="display-4 text-capitalize">Musica e non solo</h3>
               
-              <p>Lorem ???</p>
-              <Button variant="outline-light" className="btn-outline my-3" href="/idea">
+              <p>Sei un creatore e cerchi musiche emozionanti per i tuoi contenuti? 
+              <br/> Puoi usare le tracce in base a quello che vuoi trasmettere,
+              infatti le musiche caricate sul nostro sito sono tutte con licenza creative common</p>
+              <Button variant="outline-light" className="btn-outline my-3" href="https://www.documentazione.org/musica-creativecommons.php" target="_blank">
                 <ChevronDoubleRight/> <span className="mx-3">Scopri di più</span>
               </Button>
             </Col>
           </Row>     
-        </Container>*/}
+        </Container>
     </div>
   )
 }
