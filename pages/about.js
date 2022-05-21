@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import Piano from '../src/piano';
 import style from '../style/idea.module.css';
