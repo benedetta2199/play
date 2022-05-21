@@ -55,7 +55,7 @@ export default function CardEmotion(props) {
   return (
     <div className={`${style.glow} ${stGlow}`}>
       <div className={`${style.card} ${stCard}`}>
-        <img src={"https://play-experiences.vercel.app/emotion/"+titolo+".jpg"} alt=""/>
+        <img src={"./emotion/"+titolo+".webp"} alt=""/>
         <h2 className="text-capitalized mt-2 mb-0 h4">{titolo}</h2>
         <p>{descrizione}</p>
         <Button className={style.btPlay + st + " text-light rounded-circle"} href={"./"+titolo}><PlayFill/></Button>
