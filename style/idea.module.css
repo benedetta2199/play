@@ -32,5 +32,5 @@
     
     .rowIframe iframe{width:98%; height:200px}
 
-    .imgAuth{background-size:33.4%;}
+    .imgAuth{background-size:33.4%; background-repeat:repeat;}
   }
