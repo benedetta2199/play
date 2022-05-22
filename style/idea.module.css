@@ -13,6 +13,8 @@
 
 .rowIframe iframe{width:80%; height:280px}
 
+.imgAuth{background-blend-mode:lighten;background-size:cover; background-repeat:no-repeat;}
+
 @media only screen and (max-width: 600px) {
     .logo{width: 50px;}
     .title *{font-size: 1rem;}
@@ -29,4 +31,6 @@
     .text{width:98%; margin: 0 1%;}
     
     .rowIframe iframe{width:98%; height:200px}
+
+    .imgAuth{background-size:33.4%;}
   }

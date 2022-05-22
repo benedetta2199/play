@@ -5,6 +5,7 @@ import { SkipBackwardFill, SkipForwardFill, ChevronDoubleDown, ChevronDoubleRigh
 import Helmet from 'react-helmet';
 import VinilRadar from '../src/vinil-radar';
 import Disk from '../src/disk';
+import Player from '../src/player';
 
 export default function Home() {
 
@@ -52,8 +53,32 @@ export default function Home() {
             <Col xs={12}> <Disk/> </Col>
           </Row>      
         </Container>
-        
+
         <Container className="text-light text-center my-md-5 pt-md-5">
+          <Row className="mt-md-5 pt-md-5">
+            <Col>
+              <h3 className="display-4 text-capitalize">Musica ponte tra le generazioni</h3>
+              
+              <Row >
+                <Col md={3} className={style.imgAuth + " d-flex justify-content-center align-items-center"} style={{backgroundImage:'url(./maneskine.png)'}}>
+                  <iframe src={"https://open.spotify.com/embed/track/3Wrjm47oTz2sjIgck11l5e"} style={{borderRadius:'10px', boxShadow:'0 0 15px #000'}} width="80" height="80"/>
+                </Col>
+                <Col md={6} className="py-md-3">
+                  <p className="py-md-5 px-md-4">
+                    Il progetto nasce anche per ampliare la cultura musicale.<br/> 
+                    Tutte le playlist sono in continuo aggiornamento, ogni settimana vengono aggiunti nuovi brani di diversi autori e diverse epoche, 
+                    in modo da poter conoscere gli artisti meno conosciuti o al di fuori del panorama musicale attuale.<br/>
+                  </p>
+                </Col>
+                <Col md={3} className={style.imgAuth + " d-flex justify-content-center align-items-center"} style={{backgroundImage:'url(./beethoven.png)'}}>
+                  <iframe src={"https://open.spotify.com/embed/track/6jBT9MBVjX4kZ68IV6wHnH?utm_source=generator"} style={{borderRadius:'10px', boxShadow:'0 0 15px #000'}} width="80" height="80"/>
+                </Col>
+              </Row>
+            </Col>
+          </Row>     
+        </Container>
+        
+        <Container className="text-light text-center my-5 pt-5">
           <Row className="mt-md-5 pt-md-5">
             <Col>
               <h3 className="display-4 text-capitalize">Musica e non solo</h3>

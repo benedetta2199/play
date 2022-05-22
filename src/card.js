@@ -34,7 +34,7 @@ export default function CardEmotion(props) {
     descrizione="Illumina la tua giornata! Musica per sorridere, e ritrovare il buon umore.";
     st = " btn_gi"; stCard = style.cardGioia; stGlow = style.gGioia; break;
     case "passione":
-    descrizione="";
+    descrizione="Lasciati travolgere dalla passione... Ascolta la musica che fa battare il tuo cuore";
     st = " btn_pass"; stCard = style.cardPassione; stGlow = style.gPassione; break;
     case "paura":
     descrizione="Terrorizzato? Vivi la tensione e la suspence… combatti e supera le tue paure!";

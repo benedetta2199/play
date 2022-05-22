@@ -7,7 +7,14 @@ import useSound from 'use-sound';
 
 export default function Player(props) {
 
-  const {title, t, a, img} = props;
+  const {title, t, a, img, flag} = props;
+
+  var control;
+  if(flag==undefined){
+    control = true;
+  }else{
+    control = false;
+  }
 
   var tracks=[];
     switch(title){
@@ -58,14 +65,16 @@ export default function Player(props) {
                 <h2 className="h4 mt-md-3 mt-4 mx-2">{t && t[cont]}</h2>
                 <p className="mx-4">{a && a[cont]}</p>
                 <div className={style.btnPlayer + ' d-flex w-100 justify-content-center'}>
-                  <SkipBackwardFill onClick={()=>{setCont((cont+lenght-1)%length); stop(); setIsStart(false); controls.start("stop"); setButton(<PlayFill/>)}}/>
+                  {control &&
+                  <SkipBackwardFill onClick={()=>{setCont((cont+lenght-1)%length); stop(); setIsStart(false); controls.start("stop"); setButton(<PlayFill/>)}}/>}
                   <a className='m-0 p-0'
                     onClick={()=>{setIsStart(!isStart);
                                   if(isStart){pause(); controls.stop(); setButton(<PlayFill/>);}
                                   else {play(); controls.start("start"); setButton(<PauseFill/>)}}}>
                     {char}
                   </a>
-                  <SkipForwardFill onClick={()=>{setCont((cont+1)%lenght); stop(); setIsStart(false); controls.start("stop"); setButton(<PlayFill/>)}}/>
+                  {control &&
+                  <SkipForwardFill onClick={()=>{setCont((cont+1)%lenght); stop(); setIsStart(false); controls.start("stop"); setButton(<PlayFill/>)}}/>}
                 </div>
               </Col>
             </Row>        
