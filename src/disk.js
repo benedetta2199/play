@@ -35,7 +35,8 @@ export default function Disk() {
             <Button className='btn-sm mt-2 py-1 btn-secondary mb-2' 
             onClick={()=>{setDte(e.dte);setDts(e.dts);setTitle(e.title);}}>Mostra</Button>
           </div>)
-        })}        
+        })}  
+        <small>Clicca play per ascoltare la canzone e Mostra per visualizzarne i dati</small>      
       </div>
       <h2 className='text-center pt-4'>{'Emozioni suschitate da'+title}</h2>
       <div className='d-flex justify-content-center'>
