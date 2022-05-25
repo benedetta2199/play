@@ -8,12 +8,11 @@ export default function Home() {
 
 
   return (
-    <div className="container">
+    <div className="container mb-2">
     <Head>
       <title>Play - Documentazione</title>
     </Head>
 
-    <main>
       <Container className={style.c}>
       <h1 className='text-center display-2 mt-3'>Documentazione</h1>
 
@@ -63,8 +62,9 @@ export default function Home() {
         <Row className="d-flex flex-column align-items-center">
           <Col md={9}>
             <p>
-            Il sito, rivolto in modo particolare ai giovani, è una libreria musicale eclettica, organizzata attraverso l'emozione e i sentimenti che scaturiscono da ogni brano, per offrire un servizio di streaming musicale diverso da quelli esistenti che consentono all'utente di scegliere tra milioni di brani (Spotify, YT-Music, Apple Music...). L'innovazione di "Play" è quella di scegliere per l'utente, in base al suo stato emotivo.
-            Le emozioni presenti sono 13, le stesse individuate dall'Università di Berkeley dopo aver mappato le risposte emotive di oltre 2500 persone all'ascolto di molteplici brani.
+            Il sito, rivolto in modo particolare ai giovani, è una libreria musicale eclettica, organizzata attraverso l'emozione principale che scaturisce da ogni brano, per offrire un servizio di streaming musicale diverso da quelli esistenti. 
+            Infatti non sarà possibile scegliere uno specifico brano tra milioni ma, in base all'umore dell'utente, saranno proposti brani di diversi autori e diverse epoche che esprimano quello stato emotivo.
+            Le emozioni rappresentate sono 13, le stesse individuate dall'Università di Berkeley dopo aver mappato le risposte emotive di oltre 2500 persone all'ascolto di molteplici brani.
             </p>
            
           </Col>
@@ -131,7 +131,7 @@ export default function Home() {
                 <Col xs={6} className='d-flex flex-column text-center'>
                   <strong>Contro</strong>
                   <small>Non si ha una visione globale di tutte le playlist</small>
-                  <small>Non si possono dare pareri sulle playlist</small>
+                  <small>Non si possono dare consigli sulle playlist</small>
                   <small>Skip limitati e pubblicità nella versione gratuita</small>
                 </Col>
               </Row>
@@ -166,8 +166,8 @@ export default function Home() {
                 <Col md={6} xs={12} className='text-center'>
                   <p className='text-center h5 mt-2'>I Colori</p>
                   <p>
-                    Per quanto riguarda i colori ho optato per 2 colori neutri per la struttura del sito generali e 2 colori (uno principale e il suo complementare) che caratterizzano ogni emozione, per meglio distinguerla.
-                    Questo garantisce un design pulito e minimale, ma allo stesso tempo non banale e accattivante. 
+                    Per quanto riguarda i colori ho optato per 2 colori neutri per la struttura del sito e 2 colori (uno principale e il suo complementare) che caratterizzano ogni emozione, per meglio distinguerle.
+                    Per rendere il design pulito e minimale, ma allo stesso tempo non banale e accattivante. 
                   </p>
                   <img src="./graph/palette.png" className={'w-75'} alt=""/>
                 </Col>
@@ -178,7 +178,7 @@ export default function Home() {
                     I font, importanti da Google font, sono San Serif, per migliorare la qualità della lettura (poichè i paragrafi sono brevi,) e con uno spessore ridotto per dare l'idea di ordine e pulizia.
                     <br/>
                     In particolare si è scelto 'Julius Sans One' per i titoli, inquanto costituito da caratteri in maiuscole, mentre 'Prompt' dallo stile più classico per il testo. 
-                    Le dimensioni dei caratteri sono sempre superiori alla dimensione minima per garantire l'accessibilità.
+                    Le dimensioni e il contrasto dei caratteri sono tali da garantire la facilità della lettura e l'accessibilità.
                   </p>
                   <div className='text-center'>
                       <p className={style.julius+' h3 text-center'}>Julius Sans One</p>
@@ -190,9 +190,9 @@ export default function Home() {
                 <Col xs={12} className='mt-1'>
                 <p className='text-center h5 mt-2'>Le immagini</p>
                 <p>
-                  Le immagini sono usate sopratutto a scopo estetico e per catturare l'attenzione dell'utente (motivo per il quale occupano tutta la pagina).
-                  Le immagini con licenza Creative Commons sono state prese dal sito <a href='https://www.freepik.com/home' className='text-light'>freepik</a> e modificate a seconda delle esigenze,
-                  passando con il mouse su ogni immagine appare il link alla relativa risorsa sul sito.
+                  Le immagini sono usate sopratutto a scopo estetico e per catturare l'attenzione dell'utente (motivo per il quale occupano la maggior parte della pagina).
+                  Sono state prese dal sito <a href='https://www.freepik.com/home' className='text-light'>freepik</a> (licenza Creative Commonse) e modificate a seconda delle esigenze.
+                  Passando il mouse su ogni immagine appare il link alla relativa risorsa sul sito e l'autore.
                 </p>
                 </Col>
 
@@ -213,9 +213,9 @@ export default function Home() {
           <Col md={6} xs={12}>
             <p>
               Il sito è costruito utilizzando come linguaggio HTML, CSS e JavaScript e sfruttando react (libreria open-source, front-end, basata su JavaScript).
-              Inoltre sono stati integrati diversi pacchetti, anchessi scritti in JavaScript, elencati qui a lato. <br/>
+              Inoltre sono stati integrati diversi pacchetti, anchessi scritti in JavaScript, elencati di seguito. <br/>
               Come Strumenti ho utilizzato: Visual Studio Code (come IDE), GoogleFont (per la scelta dei font), freepik e photoshop (per le immagini), figma (per la realizzazione dei wireframe), github e vercel (per la pubblicazione del sito).
-            {/**ANALITICS */}
+              Inoltre, sono state collegate le Analytics Google per monitorare il traffico del sito. 
             </p>
           </Col>
           <Col md={3} xs={12}>
@@ -228,6 +228,7 @@ export default function Home() {
               <li>react-device-detect v.2.2.2</li>
               <li>react-scroll v.1.8.7</li>
               <li>use-sound v.4.0.1</li>
+              <li>emailjs-com v.3.2.0"</li>
             </ul>
           </Col>
         </Row>
@@ -239,10 +240,15 @@ export default function Home() {
         <Row className="d-flex flex-column align-items-center">
           <Col md={9}>
             <p>
-              Il sito non avendo uno scopo divulgativo non presenta un particolare story telling, quindi può essere visualizzato da una qualunque sezione senza rovinare l'esperienza utente, inquanto ogni parte è indipendente dalle altre. Il sito si pone come obiettivo quello di offrire uno streaming musicale diverso dal solito, permettendo così all'utente di conosce brani che normalmente non ascolterebbe (promuovendo la conoscenza musicale) e provando a migliorare l'umore dell'utente grazie all'influsso che la musica ha sul nostro cervello.
+              Il sito è basato sull'ideologia 'less is more' motivo per il quale i contenuti e gli elemneti sono esculisvamente quelli essenziali, 
+              questo è possibile perchè il sito non non ha uno scopo divulgativo, questo gli permette anche di essere visualizzato da una qualunque sezione
+              senza rovinare l'esperienza utente, inquanto ogni parte è indipendente dalle altre. 
+              Il sito si pone come obiettivo quello di offrire uno streaming musicale diverso dal solito, permettendo così all'utente di conosce brani che normalmente non ascolterebbe (promuovendo la conoscenza musicale) e provando a migliorare l'umore dell'utente grazie all'influsso che la musica ha sul nostro cervello.
             </p>
             <p>
-              Per distinguermi dai competitor e fidelizzare l'utente ho deciso di dare particolare importanza a tutti quegli aspetti che attirano l'attenzione dell'utente: gli elementi grafici, colori contrastati e brillanti, elementi di gamification (come la tastiera del pianoforte dell'home page che oltre a essere un menù di navigazione, permette di suonare i semitoni). Per render intuitiva l'interazione con questi elementi ho scelto una resa grafica che assomigliasse a degli oggetti di uso comune, per migliorare l'affordance, ovvero la qualità che permette all'utente di riuscire a comprenderne il funzionamento. Sicuramente un limite riscontrato è stato quello del limitato numero di brani musicali (per il copiright), risolvibile ampliando in futuro il catalogo (magari collaborando anche con nuovi artisti poco conosciuti)
+              Per distinguermi dai competitor e fidelizzare l'utente ho deciso di dare particolare importanza a tutti quegli aspetti che attirano l'attenzione dell'utente: gli elementi grafici, colori contrastati e brillanti, elementi di gamification (come la tastiera del pianoforte dell'home page che oltre a essere un menù di navigazione, permette di suonare i semitoni). 
+              Per rendere intuitiva l'interazione con questi elementi ho scelto una resa grafica che assomigliasse a degli oggetti di uso comune, per migliorare l'affordance (la qualità che permette all'utente di riuscire a comprenderne il funzionamento). 
+              Sicuramente un limite riscontrato è stato quello del limitato numero di brani musicali (per il copiright), risolvibile ampliando in futuro il catalogo (magari collaborando anche con nuovi artisti poco conosciuti).
             </p>
           </Col>
         </Row>
@@ -250,7 +256,8 @@ export default function Home() {
         <h3 className='text-center display-6 mt-2' id='22'>Target</h3>
         <Row className="d-flex flex-column align-items-center">
           <Col md={9}>
-            <p>Il target preso in considerazione è quello dei ragazzi (15-25 anni) italiani (inquanto il sito è disponibile in questa lingua), abituati a servizi simili e sempre curiosi di provare esperienze nuove. Ma, essendo la struttura del sito intuitiva e accattivante, si adatta bene a un target utente più 
+            <p>Il target preso in considerazione è quello dei ragazzi (15-25 anni) italiani (inquanto il sito è disponibile in questa lingua), abituati a servizi simili e sempre curiosi di provare esperienze nuove. 
+              Ma, essendo la struttura del sito intuitiva e accattivante, si adatta bene a un target utente più ampio.
             </p>
           </Col>
         </Row>
@@ -258,16 +265,65 @@ export default function Home() {
         <h3 className='text-center display-6 mt-2' id="23">Promozione</h3>
         <Row className="d-flex flex-column align-items-center">
           <Col md={9}>
-            <p>Intendo promuovere il sito prevalentemente online, tramite social (Instagram essendo il social più utilizzato dal target scelto) e tramite passaparola.
+            <p>
+              Intendo promuovere il sito prevalentemente online, tramite social (Instagram essendo il social più utilizzato dal target scelto) e tramite passaparola.
             </p>
           </Col>
         </Row>
         
-        <h3 className='text-center display-6 mt-2' id="24">Valutazione dei risultati</h3>
+        <h3 className='text-center display-6 mt-2' id="24">Valutazione dei risultati</h3><Row className="d-flex flex-column align-items-center">
+          <Col md={9}>
+            <h4 className='text-center mt-1'>50 visite al sito da utenti unici</h4>
+            <Row className="d-flex align-items-center">
+              <Col md={4}>
+                <p>
+                  Ritengo che l’obiettivo comunicativo sia stato pienamente raggiunto, infatti, nonostante il sito sia online da neanche una settimana,
+                  ha contato XX visualizzazioni da utenti unici, superando ampiamente i 50 dell'obbiettivo. <br/>
+                  Inoltre si può vedere come le previsioni del target (popolazione italiana) e dei dispositivi (mobile) sia stata rispettata.
+                </p>
+              </Col>          
+              <Col md={8}><img src='./graph/analytics.png' className='w-100 border' alt="retro brochure pubblicitaria di Play"/></Col>
+            </Row>
+            <h4 className='text-center mt-2'>20 like a un post del profilo instagram</h4>          
+            <Row className="d-flex align-items-center">
+              <Col md={8}><img src='./graph/post.png' className='w-100 border' alt="retro brochure pubblicitaria di Play"/></Col>
+              <Col md={4}>
+                <p>
+                  Essendo instagram il mezzo scelto per la promozione, i post sono creati per invogliare l'utente a 
+                  guardare il sito web, motivo per il quale l'obiettivo riguardo al numero dei like non è particolarmente altro.
+                </p>
+              </Col>
+              </Row>
+            <h4 className='text-center mt-2'>Raggiungere almeno 100 account su instagram</h4>
+            <Row className="d-flex align-items-center">
+              <Col md={6}>
+                <p>
+                  Invece ho ritenuto più rilevante fissare un obiettivo inerente alla copertura dell'account e quanti profili riusciva a raggiungere.
+                  Per vedere a quanti utenti riuscisse ad arrivare la promozione del sito.
+                </p>
+              </Col>
+              <Col md={6} className='text-end'><img src='./graph/impression.png' className='w-75 px-4' alt="retro brochure pubblicitaria di Play"/></Col>
+              </Row>
+            <h4 className='text-center mt-2'>Avere 20 visualizzazione al sito da instagram</h4>
+            <Row className="d-flex align-items-center">
+            <Col md={7}><img src='./graph/social.png' className='w-75' alt="retro brochure pubblicitaria di Play"/></Col>
+              <Col md={5}>
+                <p>
+                  Invece ho ritenuto più rilevante fissare un obiettivo per monitorare quante persone visualizzassero il sito tramite i link inseriti sui
+                  social (instagram in questo caso).
+                </p>
+              </Col>
+              </Row>
+            <h4 className='text-center mt-3'>Produzione grafica - Brochure</h4>
+          </Col>
+        </Row>
+        <Row className="d-flex align-items-center">
+          <Col md={6}><img src='./graph/br1.png' className='w-100 border' alt="fronte brochure pubblicitaria di Play"/></Col>          
+          <Col md={6}><img src='./graph/br2.png' className='w-100 border' alt="retro brochure pubblicitaria di Play"/></Col>
+        </Row>
 
       </section>
       </Container>
-    </main>
 
   </div>
   )
