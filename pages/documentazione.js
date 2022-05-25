@@ -286,11 +286,12 @@ export default function Home() {
             </Row>
             <h4 className='text-center mt-2'>20 like a un post del profilo instagram</h4>          
             <Row className="d-flex align-items-center">
-              <Col md={8}><img src='./graph/post.png' className='w-100 border' alt="retro brochure pubblicitaria di Play"/></Col>
-              <Col md={4}>
+              <Col md={7}><img src='./graph/post.png' className='w-75' alt="retro brochure pubblicitaria di Play"/></Col>
+              <Col md={5}>
                 <p>
                   Essendo instagram il mezzo scelto per la promozione, i post sono creati per invogliare l'utente a 
-                  guardare il sito web, motivo per il quale l'obiettivo riguardo al numero dei like non è particolarmente altro.
+                  guardare il sito web, motivo per il quale l'obiettivo riguardo al numero dei like non è particolarmente altro.<br/>
+                  <a class='text-light' href='https://www.instagram.com/p/CdEWHSTj7E1/?utm_source=ig_web_copy_link'>Post</a>
                 </p>
               </Col>
               </Row>
