@@ -287,7 +287,7 @@ export default function Home() {
             </Row>
             <h4 className='text-center mt-4'>20 like a un post del profilo instagram</h4>          
             <Row className="d-flex align-items-center">
-              <Col md={7}><img src='./graph/post.png' className='w-100' alt="Insights dei like dei post dell'account instagram"/></Col>
+              <Col md={7}><img src='./graph/post.PNG' className='w-100' alt="Insights dei like dei post dell'account instagram"/></Col>
               <Col md={5} className='text-center'>
                 <p>
                   Essendo instagram il mezzo scelto per la promozione, i post sono creati per invogliare l'utente a 
