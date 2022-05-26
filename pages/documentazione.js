@@ -272,50 +272,51 @@ export default function Home() {
         </Row>
         
         <h3 className='text-center display-6 mt-2' id="24">Valutazione dei risultati</h3><Row className="d-flex flex-column align-items-center">
+          <p className='text-center'>Dati aggiornati a 26/05/2022 alle 9.00</p>
           <Col md={9}>
             <h4 className='text-center mt-1'>50 visite al sito da utenti unici</h4>
             <Row className="d-flex align-items-center">
               <Col md={4}>
                 <p>
-                  Ritengo che l’obiettivo comunicativo sia stato pienamente raggiunto, infatti, nonostante il sito sia online da neanche una settimana,
-                  ha contato XX visualizzazioni da utenti unici, superando ampiamente i 50 dell'obbiettivo. <br/>
+                  Ritengo che l’obiettivo comunicativo sia stato pienamente raggiunto, infatti, nonostante il sito sia online da appena una settimana,
+                  ha contato 129 visualizzazioni da utenti unici, superando ampiamente i 50 dell'obbiettivo. <br/>
                   Inoltre si può vedere come le previsioni del target (popolazione italiana) e dei dispositivi (mobile) sia stata rispettata.
                 </p>
               </Col>          
-              <Col md={8}><img src='./graph/analytics.png' className='w-100 border' alt="retro brochure pubblicitaria di Play"/></Col>
+              <Col md={8}><img src='./graph/analytics.png' className='w-100 border' alt="google analytics delle visualizzazioni dell'utente"/></Col>
             </Row>
-            <h4 className='text-center mt-2'>20 like a un post del profilo instagram</h4>          
+            <h4 className='text-center mt-4'>20 like a un post del profilo instagram</h4>          
             <Row className="d-flex align-items-center">
-              <Col md={7}><img src='./graph/post.png' className='w-75' alt="retro brochure pubblicitaria di Play"/></Col>
-              <Col md={5}>
+              <Col md={7}><img src='./graph/post.png' className='w-100' alt="Insights dei like dei post dell'account instagram"/></Col>
+              <Col md={5} className='text-center'>
                 <p>
                   Essendo instagram il mezzo scelto per la promozione, i post sono creati per invogliare l'utente a 
-                  guardare il sito web, motivo per il quale l'obiettivo riguardo al numero dei like non è particolarmente altro.<br/>
-                  <a class='text-light' href='https://www.instagram.com/p/CdEWHSTj7E1/?utm_source=ig_web_copy_link'>Post</a>
+                  guardare il sito web, più che per raccogliere like, motivo per il quale l'obiettivo riguardo al numero dei like non è particolarmente alto.<br/>
                 </p>
+                <a class='text-light mt-2' href='https://www.instagram.com/p/CdEWHSTj7E1/?utm_source=ig_web_copy_link'>Post</a>
               </Col>
               </Row>
-            <h4 className='text-center mt-2'>Raggiungere almeno 100 account su instagram</h4>
+            <h4 className='text-center mt-4'>Raggiungere almeno 100 account su instagram</h4>
             <Row className="d-flex align-items-center">
-              <Col md={6}>
+              <Col md={5}>
                 <p>
                   Invece ho ritenuto più rilevante fissare un obiettivo inerente alla copertura dell'account e quanti profili riusciva a raggiungere.
                   Per vedere a quanti utenti riuscisse ad arrivare la promozione del sito.
                 </p>
               </Col>
-              <Col md={6} className='text-end'><img src='./graph/impression.png' className='w-75 px-4' alt="retro brochure pubblicitaria di Play"/></Col>
+              <Col md={7} className='text-end'><img src='./graph/impression.png' className='w-100 px-4' alt="Insights della copertura dell'account instagram"/></Col>
               </Row>
-            <h4 className='text-center mt-2'>Avere 20 visualizzazione al sito da instagram</h4>
+            <h4 className='text-center mt-4'>Avere 20 visualizzazione al sito da instagram</h4>
             <Row className="d-flex align-items-center">
-            <Col md={7}><img src='./graph/social.png' className='w-75' alt="retro brochure pubblicitaria di Play"/></Col>
-              <Col md={5}>
+            <Col md={8} className='pr-5'><img src='./graph/social.png' className='w-100 mr-5 pr-5' alt="Google analytics sui canali d'indirizzamento"/></Col>
+              <Col md={4}>
                 <p>
-                  Invece ho ritenuto più rilevante fissare un obiettivo per monitorare quante persone visualizzassero il sito tramite i link inseriti sui
-                  social (instagram in questo caso).
+                  Infine ho ritenuto rilevante fissare un obiettivo per monitorare quante persone visualizzassero il sito tramite i link inseriti sui
+                  social (instagram in questo caso). Per capire se effetivamente fosse un buon canale di promozione.
                 </p>
               </Col>
               </Row>
-            <h4 className='text-center mt-3'>Produzione grafica - Brochure</h4>
+            <h4 className='text-center mt-5'>Produzione grafica - Brochure</h4>
           </Col>
         </Row>
         <Row className="d-flex align-items-center">
